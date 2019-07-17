@@ -1,6 +1,6 @@
 ---
 credit: "Australian Chamber Orchestra"
-title: "{{##First Name## || Guest}}, welcome to the ACO!"
+title: "Tom, welcome to the ACO!"
 date: 2019-01-01T00:00:00-0800
 images:
   desktop: "/assets/images/emails/desktop/australian-chamber-orchestra.jpg"

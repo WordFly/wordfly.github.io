@@ -1,5 +1,5 @@
 ---
-credit: "ACMI"
+credit: "Australian Centre for the Moving Image"
 title: "Last minute Xmas gifts for film, TV & videogame buffs"
 date: 2018-01-01T00:00:00-0800
 images:
