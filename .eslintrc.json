@@ -1,0 +1,28 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "mocha": true,
+        "node": true
+    },
+    "globals": {
+        "System": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "sourceType": "module"
+    },
+    "rules": {
+        "complexity": ["error", { "max": 10 }],
+        "indent": ["error", 2, { "SwitchCase": 1 }],
+        "max-depth": ["error", { "max": 4 }],
+        "max-len": ["error", 140],
+        "max-params": ["error",{ "max": 4 }],
+        "max-statements": ["error", { "max": 25 }],
+        "no-console": "off",
+        "quotes": ["error", "single"],
+        "semi-style": ["error", "last"],
+        "semi": ["error", "always"]
+    }
+}

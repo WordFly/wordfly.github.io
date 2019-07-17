@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<section id="gallery">
+  <nav class="filter">
+    <ul>
+      <li>
+        <button class="active" data-tag="all">All</button>
+      </li>
+      <li>
+        <button data-tag="newsletter">Newsletters</button>
+      </li>
+      <li>
+        <button data-tag="event">Events</button>
+      </li>
+      <li>
+        <button data-tag="automation">Automations</button>
+      </li>
+      <li>
+        <button data-tag="shop">Shop</button>
+      </li>
+    </ul>
+  </nav>
+  {%- if site.emails.size > 0 -%}
+  <ol class="emails">
+    {%- for email in site.emails -%}
+    <li class="fade" id="{{ email.slug }}" data-tags="{{ email.tags | join: " " }}">
+      <a href="{{ email.url | relative_url }}">
+        <img alt="{{ email.title }}" src="{{ email.images.desktop }}" />
+      </a>
+    </li>
+    {%- endfor -%}
+  </ol>
+  {%- endif -%}
+</section>
+<script src="/assets/js/home.js"></script>
+<script>
+  if(!Array.from || !Array.prototype.includes || !window.history) {
+    var elGallery = document.getElementById('gallery'),
+      elWrapper = elGallery.parentNode,
+      elMessageContainer = document.createElement('section');
+    elMessageContainer.id = 'not-supported';
+    elMessageContainer.innerHTML = '<h1>Please update your browser</h1><h2>We’re sorry, you’re using a web browser that isn’t supported by the Museum of Modern Email. To improve your experience, please upgrade to the latest version of Firefox, Chrome, Safari, or Edge.</h2>';
+    // remove the gallery UI
+    elWrapper.removeChild(elGallery);
+    // add unsupported message
+    elWrapper.appendChild(elMessageContainer);
+  } else {
+    window.home.getInstance(JSON.parse(decodeURIComponent("{{ site.emails | jsonify | uri_escape }}")));
+  }
+</script>

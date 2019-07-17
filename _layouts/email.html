@@ -1,0 +1,63 @@
+---
+layout: default
+---
+<section id="gallery">
+  <article class="email-details loaded">
+    <div class="inner">
+      <main>
+        <a data-action="close" href="/">
+          <i class="icon caret"></i>
+          Back to the Gallery
+        </a>
+        <figure>
+          <figcaption>
+            <h2>{{ page.credit }}, {{ page.date | date: "%Y" }}</h2>
+            <h1>{{ page.title }}</h1>
+          </figcaption>
+          <nav class="views">
+            <ul>
+              <li>
+                <button class="active" data-action="toggle-desktop-view">
+                  <i class="icon desktop"></i>
+                  <span class="offscreen">Desktop</span>
+                </button>
+              </li>
+              <li>
+                <button data-action="toggle-mobile-view">
+                  <i class="icon mobile"></i>
+                  <span class="offscreen">Mobile</span>
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <nav class="share">
+            <ul>
+              <li>
+                <a href="https://twitter.com/intent/tweet?hashtags=emailmarketing%2C%20mome&original_referer={{ site.url }}{{ page.url }}&ref_src=twsrc%5Etfw&text=AOGU%20Newsletter%2C%20The%20Loom%20May%202019&tw_p=tweetbutton&url={{ site.url }}{{ page.url }}&via=wordfly" target="_blank">
+                  <i class="icon twitter"></i>
+                  <span class="offscreen">Tweet</span>
+                </a>
+              </li>
+              <li>
+                <a download href="{{ page.images.desktop }}" target="_blank">
+                  <i class="icon download"></i>
+                  <span class="offscreen">Download</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <img alt="{{ page.title }} - desktop view" class="desktop-view active" src="{{ page.images.desktop }}" />
+          <img alt="{{ page.title }} - mobile view" class="mobile-view" src="{{ page.images.mobile }}" />
+        </figure>
+      </main>
+    </div>
+  </article>
+</section>
+<script src="/assets/js/email.js"></script>
+<script>
+  if(!Array.from || !Array.prototype.includes || !window.history) {
+    window.location.href = '/';
+  } else {
+    window.email.getInstance();
+  }
+</script>

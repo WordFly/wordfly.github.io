@@ -1,0 +1,200 @@
+// Some basic resets
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+// Basic styling
+body {
+  background-color: $background-color;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  font-family: $base-font-family;
+  font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  -webkit-font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  min-height: 100vh;
+  -webkit-text-size-adjust: 100%;
+  // CSS values for `background-1`
+  &.background-1 {
+    a,
+    button {
+      &:not(.active) {
+        &:hover {
+          color: #82d1e1;
+          border-bottom-color: #82d1e1;
+        }
+      }
+    }
+    > header {
+      background-image: url(images/backgrounds/background-1.svg);
+      background-position: right -26vw;
+      background-size: 60%;
+    }
+    > footer {
+      background-image: url(images/backgrounds/background-1.svg);
+      background-position: left -30vw;
+      background-size: 60%;
+    }
+    // hover display for icons
+    @include icon-on-hover('aquamarine-blue');
+  }
+  // CSS values for `background-2`
+  &.background-2 {
+    a,
+    button {
+      &:not(.active) {
+        &:hover {
+          color: #416cb4;
+          border-bottom-color: #416cb4;
+        }
+      }
+    }
+    > header {
+      background-image: url(images/backgrounds/background-2.svg);
+      background-position: right -27vw;
+      background-size: 70%;
+    }
+    > footer {
+      background-image: url(images/backgrounds/background-2.svg);
+      background-position: left bottom;
+      background-size: 70%;
+    }
+    // hover display for icons
+    @include icon-on-hover('san-marino');
+  }
+  // CSS values for `background-3`
+  &.background-3 {
+    a,
+    button {
+      &:not(.active) {
+        &:hover {
+          color: #eb3794;
+          border-bottom-color: #eb3794;
+        }
+      }
+    }
+    > header {
+      background-image: url(images/backgrounds/background-3.svg);
+      background-position: center -3vw;
+      background-size: 70%;
+    }
+    > footer {
+      background-image: url(images/backgrounds/background-3.svg);
+      background-position: -27vw -4vw;
+      background-size: 130%;
+    }
+    // hover display for icons
+    @include icon-on-hover('french-rose');
+  }
+}
+// `main` element
+main {
+  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+}
+// Images
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+// Figures
+figure > img {
+  display: block;
+}
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+// Links and buttons
+a,
+button {
+  color: $text-color;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 100ms, border-color 100ms;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+// Wrapper
+.inner {
+  margin: 0 auto;
+}
+// Clearfix
+%clearfix:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+// Offscreen text
+.offscreen {
+  left: -999999px;
+  position: absolute;
+  top: -999999px;
+}
+// Icons
+i {
+  &.icon {
+    transition: opacity 300ms;
+    &:before {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      display: block;
+      height: 30px;
+      width: 30px;
+    }
+  }
+  &.caret {
+    &:before {
+      background-image: url(map-get($icons, 'caret-grey'));
+    }
+  }
+  &.desktop {
+    &:before {
+      background-image: url(map-get($icons, 'desktop-grey'));
+    }
+  }
+  &.download {
+    &:before {
+      background-image: url(map-get($icons, 'download-grey'));
+    }
+  }
+  &.facebook {
+    &:before {
+      background-image: url(map-get($icons, 'facebook-black'));
+    }
+  }
+  &.instagram {
+    &:before {
+      background-image: url(map-get($icons, 'instagram-black'));
+    }
+  }
+  &.mobile {
+    &:before {
+      background-image: url(map-get($icons, 'mobile-grey'));
+    }
+  }
+  &.twitter {
+    &:before {
+      background-image: url(map-get($icons, 'twitter-black'));
+    }
+  }
+  &.twitter-grey {
+    &:before {
+      background-image: url(map-get($icons, 'twitter-grey'));
+    }
+  }
+  &.wordfly {
+    &:before {
+      background-image: url(map-get($icons, 'wordfly-grey'));
+    }
+  }
+}

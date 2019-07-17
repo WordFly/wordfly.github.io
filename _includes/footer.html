@@ -1,0 +1,12 @@
+<footer>
+  <div class="inner">
+    <header>
+      <h1 class="mome-text">{{ site.headline }}</h1>
+      <p>{{ site.description | escape }}</p>
+    </header>
+    <aside>
+      {%- include social.html -%}
+    </aside>
+  </div>
+  <p id="copyright"><i class="icon wordfly"></i> Copyright <strong>{{ 'now' | date: '%Y' }}</strong> WordFly. All Rights Reserved.</p>
+</footer>
