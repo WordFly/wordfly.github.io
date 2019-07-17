@@ -4,6 +4,7 @@ title: "How was Norma Jeane Baker of Troy?"
 date: 2019-01-01T00:00:00-0800
 images:
   desktop: "/assets/images/emails/desktop/shed-reminder.jpg"
+  grid: "/assets/images/emails/grid/shed-reminder.jpg"
   mobile: "/assets/images/emails/mobile/shed-reminder.jpg"
 tags:
   - automation

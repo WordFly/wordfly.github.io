@@ -4,6 +4,7 @@ title: "Happy Reading!"
 date: 2018-01-01T00:00:00-0800
 images:
   desktop: "/assets/images/emails/desktop/ngv-books.jpg"
+  grid: "/assets/images/emails/grid/ngv-books.jpg"
   mobile: /assets/images/emails/mobile/ngv-books.jpg"
 tags:
   - shop

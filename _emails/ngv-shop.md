@@ -4,6 +4,7 @@ title: "Give the Gift of Art and Design"
 date: 2018-01-01T00:00:00-0800
 images:
   desktop: "/assets/images/emails/desktop/ngv-shop.jpg"
+  grid: "/assets/images/emails/grid/ngv-shop.jpg"
   mobile: /assets/images/emails/mobile/ngv-shop.jpg"
 tags:
   - shop

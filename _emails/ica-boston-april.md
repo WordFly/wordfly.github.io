@@ -4,6 +4,7 @@ title: "April at the ICA"
 date: 2019-01-01T00:00:00-0800
 images:
   desktop: "/assets/images/emails/desktop/ica-boston-april.jpg"
+  grid: "/assets/images/emails/grid/ica-boston-april.jpg"
   mobile: "/assets/images/emails/mobile/ica-boston-april.jpg"
 tags:
   - newsletter

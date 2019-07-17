@@ -4,6 +4,7 @@ title: "Happy spring shopping!"
 date: 2019-01-01T00:00:00-0800
 images:
   desktop: "/assets/images/emails/desktop/nelson-atkins-shop.jpg"
+  grid: "/assets/images/emails/grid/nelson-atkins-shop.jpg"
   mobile: /assets/images/emails/mobile/nelson-atkins-shop.jpg"
 tags:
   - shop

@@ -4,6 +4,7 @@ title: "Mystery Packages, jobs, Industry Membership and more"
 date: 2019-01-01T00:00:00-0800
 images:
   desktop: "/assets/images/emails/desktop/melbournefestival-enews.jpg"
+  grid: "/assets/images/emails/grid/melbournefestival-enews.jpg"
   mobile: /assets/images/emails/mobile/melbournefestival-enews.jpg"
 tags:
   - newsletter

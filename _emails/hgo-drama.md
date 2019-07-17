@@ -4,6 +4,7 @@ title: "The perfect opera is waiting for you"
 date: 2019-01-01T00:00:00-0800
 images:
   desktop: "/assets/images/emails/desktop/hgo-drama.jpg"
+  grid: "/assets/images/emails/grid/hgo-drama.jpg"
   mobile: /assets/images/emails/mobile/hgo-drama.jpg"
 tags:
   - event

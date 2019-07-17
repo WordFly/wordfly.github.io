@@ -4,6 +4,7 @@ title: "Performance Reminder: The Pearl Fishers"
 date: 2019-01-01T00:00:00-0800
 images:
   desktop: "/assets/images/emails/desktop/hgo-reminder.jpg"
+  grid: "/assets/images/emails/grid/hgo-reminder.jpg"
   mobile: "/assets/images/emails/mobile/hgo-reminder.jpg"
 tags:
   - automation

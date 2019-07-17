@@ -4,6 +4,7 @@ title: "Did Peace Occur After World War I?"
 date: 2019-01-01T00:00:00-0800
 images:
   desktop: "/assets/images/emails/desktop/nwwimm-april.jpg"
+  grid: "/assets/images/emails/grid/nwwimm-april.jpg"
   mobile: "/assets/images/emails/mobile/nwwimm-april.jpg"
 tags:
   - newsletter

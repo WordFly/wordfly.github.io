@@ -4,6 +4,7 @@ title: "Perlman, Salonen, McGegan — CAMA's Centennial — 100th Concert Season
 date: 2018-01-01T00:00:00-0800
 images:
   desktop: "/assets/images/emails/desktop/cama-concerts.jpg"
+  grid: "/assets/images/emails/grid/cama-concerts.jpg"
   mobile: "/assets/images/emails/mobile/cama-concerts.jpg"
 tags:
   - event

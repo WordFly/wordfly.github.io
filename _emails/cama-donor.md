@@ -4,6 +4,7 @@ title: "Your CAMA Donor Communiqué"
 date: 2018-01-01T00:00:00-0800
 images:
   desktop: "/assets/images/emails/desktop/cama-donor.jpg"
+  grid: "/assets/images/emails/grid/cama-donor.jpg"
   mobile: "/assets/images/emails/mobile/cama-donor.jpg"
 tags:
   - newsletter
