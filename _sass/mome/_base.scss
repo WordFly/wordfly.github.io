@@ -121,6 +121,10 @@ button {
   background: #f8f8f8;
   border: none;
   cursor: pointer;
+  &[disabled] {
+    cursor: default;
+    opacity: 0.3;
+  }
 }
 // Wrapper
 .inner {

@@ -104,11 +104,13 @@ $icons: (
     a,
     button {
       &:not(.active) {
-        &:hover {
-          i {
-            &.#{$type} {
-              &:before {
-                background-image: url(find-icon($type, $color)) !important;
+        &:not([disabled]) {
+          &:hover {
+            i {
+              &.#{$type} {
+                &:before {
+                  background-image: url(find-icon($type, $color)) !important;
+                }
               }
             }
           }

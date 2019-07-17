@@ -125,6 +125,7 @@ window.home = (() => {
       }
     }
 
+    // toggle between desktop and mobile email view
     toggleEmailView(elTarget, action) {
       const elDetails = this.elPageWrapper.querySelector('.email-details'),
         elImage = elDetails.querySelector(`.${action.replace(/^toggle-/, '')}`);
@@ -140,10 +141,22 @@ window.home = (() => {
       elDetails.querySelector('a[download]').href = elImage.src;
     }
 
+    // finds and returns email's model based on id
     getEmailDetails(id) {
-      return this.collection.find(m => m.slug === id);
+      let hasPrevious = false,
+        hasNext = false;
+      const collection = this.collection,
+        emailModel = collection.find((model, index) => {
+          // is there a previous email in the collection
+          hasPrevious = index > 0;
+          // is there a next email in the collection
+          hasNext = index < collection.length - 1;
+          return model.slug === id;
+        });
+      return Object.assign({hasPrevious, hasNext}, emailModel);
     }
 
+    // create email "page"
     create(model) {
       const elPageWrapper = this.elPageWrapper,
         elContainer = elPageWrapper.querySelector('.email-details') || document.createElement('article'),
@@ -156,13 +169,13 @@ window.home = (() => {
           <nav class="traversal">
             <ul>
               <li>
-                <button data-action="goto-previous">
+                <button data-action="goto-previous"${!model.hasPrevious ? ' disabled' : ''}>
                   <i class="icon caret"></i>
                   <span class="offscreen">Previous</span>
                 </button>
               </li>
               <li>
-                <button data-action="goto-next">
+                <button data-action="goto-next"${!model.hasNext ? ' disabled' : ''}>
                   <i class="icon caret"></i>
                   <span class="offscreen">Next</span>
                 </button>
@@ -286,6 +299,7 @@ window.home = (() => {
           },
           hasId = ids.includes(el.id);
         el.classList.add('fade');
+        // TODO: take some time to figure out a better way to delay without a timer
         setTimeout(() => {
           if(hasId) {
             el.classList.remove('hide');
@@ -293,9 +307,11 @@ window.home = (() => {
             el.classList.add('hide');
           }
         }, 300);
+        // TODO: take some time to figure out a better way to delay without a timer
         setTimeout(() => {
           window.requestAnimationFrame(resizeItem);
           if(hasId) el.classList.remove('hide', 'fade');
+          // TODO: take some time to figure out a better way to delay without a timer
           setTimeout(() => done = true, 600);
         }, 600);
       });
@@ -335,6 +351,7 @@ window.home = (() => {
       elImage.addEventListener('load', () => {
         window.requestAnimationFrame(resizeItem);
         el.classList.remove('fade');
+        // TODO: take some time to figure out a better way to delay without a timer
         setTimeout(() => done = true, 600);
       }, false);
     });
