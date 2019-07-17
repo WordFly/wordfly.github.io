@@ -198,7 +198,7 @@ i {
   }
   &.wordfly {
     &:before {
-      background-image: url(map-get($icons, 'wordfly-grey'));
+      background-image: url(map-get($icons, 'wordfly-black'));
     }
   }
 }
