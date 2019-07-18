@@ -1,4 +1,76 @@
 body {
+  // CSS values for `background-1`
+  &.background-1 {
+    a,
+    button {
+      &:not(.active) {
+        &:hover {
+          color: #82d1e1;
+          border-bottom-color: #82d1e1;
+        }
+      }
+    }
+    > header {
+      background-image: url(images/backgrounds/background-1.svg);
+      background-position: right -26vw;
+      background-size: 60%;
+    }
+    > footer {
+      background-image: url(images/backgrounds/background-1.svg);
+      background-position: left -30vw;
+      background-size: 60%;
+    }
+    // hover display for icons
+    @include icon-on-hover('aquamarine-blue');
+  }
+  // CSS values for `background-2`
+  &.background-2 {
+    a,
+    button {
+      &:not(.active) {
+        &:hover {
+          color: #416cb4;
+          border-bottom-color: #416cb4;
+        }
+      }
+    }
+    > header {
+      background-image: url(images/backgrounds/background-2.svg);
+      background-position: right -27vw;
+      background-size: 70%;
+    }
+    > footer {
+      background-image: url(images/backgrounds/background-2.svg);
+      background-position: left bottom;
+      background-size: 70%;
+    }
+    // hover display for icons
+    @include icon-on-hover('san-marino');
+  }
+  // CSS values for `background-3`
+  &.background-3 {
+    a,
+    button {
+      &:not(.active) {
+        &:hover {
+          color: #eb3794;
+          border-bottom-color: #eb3794;
+        }
+      }
+    }
+    > header {
+      background-image: url(images/backgrounds/background-3.svg);
+      background-position: center -3vw;
+      background-size: 70%;
+    }
+    > footer {
+      background-image: url(images/backgrounds/background-3.svg);
+      background-position: -27vw -4vw;
+      background-size: 130%;
+    }
+    // hover display for icons
+    @include icon-on-hover('french-rose');
+  }
   .mome-text {
     font-weight: bold;
     letter-spacing: -1px;
@@ -111,6 +183,30 @@ body {
       }
     }
   }
+  #back-to-top {
+    background-color: #ffffff;
+    bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    height: 20px;
+    padding: 10px 15px;
+    position: fixed;
+    right: 30px;
+    transition: opacity 300ms, visibility 300ms;
+    width: 20px;
+    z-index: 999999;
+    &.hide {
+      opacity: 0;
+      visibility: hidden;
+    }
+    .icon {
+      &:before {
+        height: 100%;
+        transform: rotate(-90deg);
+        width: 100%;
+      }
+    }
+  }
 }
 
 @include media-query($medium) {
@@ -133,6 +229,9 @@ body {
           padding: 0 50px;
         }
       }
+    }
+    #back-to-top {
+      display: block;
     }
   }
 }

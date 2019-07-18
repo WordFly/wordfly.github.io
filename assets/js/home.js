@@ -93,7 +93,6 @@ window.home = (() => {
 
     onActionClick(e) {
       const elTarget = e.currentTarget,
-        elDetails = this.elPageWrapper.querySelector('.email-details'),
         action = elTarget.dataset.action;
       if(action === 'close') {
         this.state.value = '';
@@ -275,12 +274,14 @@ window.home = (() => {
     const emailDetails = new EmailDetails(data),
       masonryGrid = new MasonryGrid();
 
+    // hides / shows filters
     function onNavigationClick(e) {
       const elTarget = e.target,
         elCurrentTarget = e.currentTarget;
       if(elTarget === elCurrentTarget || elTarget.nodeName === 'BUTTON') elCurrentTarget.classList.toggle('open');
     }
 
+    // apply filter to email grid
     function onFilterClick(e) {
       const filter = e.target.dataset.tag,
         collection = filter !== 'all' ? data.filter(m => m.tags.includes(filter)) : data,
@@ -323,6 +324,7 @@ window.home = (() => {
       emailDetails.collection = collection;
     }
 
+    // update push state
     function onItemClick(e) {
       const elTarget = e.currentTarget;
       e.preventDefault();
@@ -330,12 +332,15 @@ window.home = (() => {
       emailDetails.state.value = `/${elTarget.id}`;
     }
 
+    // hide / show filters
     document.querySelector('#gallery .filter ul').addEventListener('click', onNavigationClick);
 
     Array.from(document.querySelectorAll('#gallery .filter button')).forEach(el => {
+      // apply filter to email grid
       el.addEventListener('click', onFilterClick);
     });
 
+    // resize email grid items
     Array.from(document.querySelectorAll('#gallery .emails li')).forEach(el => {
       let done = false;
       const resizeItem = () => {
