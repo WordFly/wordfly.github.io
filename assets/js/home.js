@@ -71,7 +71,7 @@ window.home = (() => {
       // e.preventDefault();
       if(elDetails && elDetails.classList.contains('loaded')) {
         elDetails.classList.remove('loaded');
-        elDetails.addEventListener('transitionend', this.show.bind(this), { once: true })
+        elDetails.addEventListener('transitionend', this.show.bind(this), { once: true });
       } else {
         this.show();
       }
