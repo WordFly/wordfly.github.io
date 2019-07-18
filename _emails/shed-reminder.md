@@ -1,5 +1,5 @@
 ---
-credit: "Shed"
+credit: "The Shed"
 title: "How was Norma Jeane Baker of Troy?"
 date: 2019-01-01T00:00:00-0800
 images:
