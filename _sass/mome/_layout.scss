@@ -193,7 +193,6 @@ body {
     background-color: #ffffff;
     bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    display: none;
     height: 20px;
     padding: 10px 15px;
     position: fixed;
@@ -235,9 +234,6 @@ body {
           padding: 0 50px;
         }
       }
-    }
-    #back-to-top {
-      display: block;
     }
   }
 }
