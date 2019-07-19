@@ -194,13 +194,13 @@ window.home = (() => {
               <nav class="views">
                 <ul>
                   <li>
-                    <button class="active" data-action="toggle-desktop-view">
+                    <button class="active" data-action="toggle-desktop-view" data-hint="Show desktop">
                       <i class="icon desktop"></i>
                       <span class="offscreen">Desktop</span>
                     </button>
                   </li>
                   <li>
-                    <button data-action="toggle-mobile-view">
+                    <button data-action="toggle-mobile-view" data-hint="Show desktop">
                       <i class="icon mobile"></i>
                       <span class="offscreen">Mobile</span>
                     </button>
@@ -210,13 +210,13 @@ window.home = (() => {
               <nav class="share">
                 <ul>
                   <li>
-                    <a href="https://twitter.com/intent/tweet?hashtags=emailmarketing%2C%20mome&original_referer=${encodedHref}&ref_src=twsrc%5Etfw&text=AOGU%20Newsletter%2C%20The%20Loom%20May%202019&tw_p=tweetbutton&url=${encodedHref}&via=wordfly" target="_blank">
+                    <a data-hint="Share on Twitter" href="https://twitter.com/intent/tweet?hashtags=emailmarketing%2C%20mome&original_referer=${encodedHref}&ref_src=twsrc%5Etfw&text=AOGU%20Newsletter%2C%20The%20Loom%20May%202019&tw_p=tweetbutton&url=${encodedHref}&via=wordfly" target="_blank">
                       <i class="icon twitter"></i>
                       <span class="offscreen">Tweet</span>
                     </a>
                   </li>
                   <li>
-                    <a download href="${model.images.desktop}" target="_blank">
+                    <a data-hint="Download image" download href="${model.images.desktop}" target="_blank">
                       <i class="icon download"></i>
                       <span class="offscreen">Download</span>
                     </a>
