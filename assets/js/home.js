@@ -200,7 +200,7 @@ window.home = (() => {
                     </button>
                   </li>
                   <li>
-                    <button data-action="toggle-mobile-view" data-hint="Show desktop">
+                    <button data-action="toggle-mobile-view" data-hint="Show mobile">
                       <i class="icon mobile"></i>
                       <span class="offscreen">Mobile</span>
                     </button>
