@@ -161,7 +161,7 @@ window.home = (() => {
         elContainer = elPageWrapper.querySelector('.email-details') || document.createElement('article'),
         encodedHref = encodeURIComponent(window.location.href);
       elContainer.id = `${model.slug}-details`;
-      elContainer.classList.add('email-details'),
+      elContainer.classList.add('email-details');
       // build out container's contents
       elContainer.innerHTML = `
         <div class="inner">
@@ -188,7 +188,7 @@ window.home = (() => {
             </button>
             <figure>
               <figcaption>
-                <h2>${model.credit}, ${new Date(model.date.replace(/\s/, 'T').replace(/\s/, '')).getUTCFullYear()}</h2>
+                <h2>${model.credit}, ${new Date(model.date.replace(/\s/, 'T').replace(/\s.*/, '')).getUTCFullYear()}</h2>
                 <h1>${model.title}</h1>
               </figcaption>
               <nav class="views">
