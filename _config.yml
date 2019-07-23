@@ -4,7 +4,7 @@ email: kirk.bentley@wordfly.com
 description: "The Museum of Modern Email is dedicated to advancing the email arts. We feature beautiful and thoughtfully designed email campaigns created by performing arts and culture organizations from around the world."
 baseurl: ""
 url: "https://museumofmodernemail.com"
-facebook_username: emailmuseum
+# facebook_username: emailmuseum
 instagram_username: emailmuseum
 twitter_username: emailmuseum
 markdown: kramdown
