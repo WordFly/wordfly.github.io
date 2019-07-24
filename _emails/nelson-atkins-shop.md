@@ -1,5 +1,5 @@
 ---
-credit: "Nelson-Atkins Museum"
+credit: "The Nelson-Atkins Museum of Art"
 title: "Happy spring shopping!"
 date: 2019-01-01T00:00:00-0800
 images:
