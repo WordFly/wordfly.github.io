@@ -1,5 +1,5 @@
 ---
-credit: "Museum of Contemporary Art"
+credit: "Museum of Contemporary Art Toronto"
 title: "Your event at MOCA is coming up"
 date: 2019-01-01T00:00:00-0800
 images:
