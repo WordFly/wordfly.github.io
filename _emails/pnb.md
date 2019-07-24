@@ -10,7 +10,7 @@ tags:
   - event
 permalink: /emails/pnb/
 ---
-Some other content goes here.
+We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
 
 ![{{ page.title }} – desktop view]({{ page.images.desktop }})
 ![{{ page.title }} – mobile view]({{ page.images.mobile }})
