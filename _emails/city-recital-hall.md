@@ -5,7 +5,7 @@ date: 2019-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/city-recital-hall.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/city-recital-hall.jpg"
-  mobile: https://media.wordfly.com/wordfly/mome/mobile/city-recital-hall.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/city-recital-hall.jpg"
 tags:
   - event
 permalink: /emails/city-recital-hall/

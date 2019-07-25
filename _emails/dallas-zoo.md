@@ -5,7 +5,7 @@ date: 2019-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/dallas-zoo.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/dallas-zoo.jpg"
-  mobile: https://media.wordfly.com/wordfly/mome/mobile/dallas-zoo.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/dallas-zoo.jpg"
 tags:
   - event
 permalink: /emails/dallas-zoo/

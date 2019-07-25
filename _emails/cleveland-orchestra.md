@@ -5,7 +5,7 @@ date: 2019-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/cleveland-orchestra.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/cleveland-orchestra.jpg"
-  mobile: https://media.wordfly.com/wordfly/mome/mobile/cleveland-orchestra.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/cleveland-orchestra.jpg"
 tags:
   - newsletter
 permalink: /emails/cleveland-orchestra/

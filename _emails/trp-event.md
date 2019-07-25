@@ -5,7 +5,7 @@ date: 2019-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/trp-event.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/trp-event.jpg"
-  mobile: https://media.wordfly.com/wordfly/mome/mobile/trp-event.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/trp-event.jpg"
 tags:
   - newsletter
 permalink: /emails/trp-event/

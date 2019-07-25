@@ -5,7 +5,7 @@ date: 2019-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/sfo.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/sfo.jpg"
-  mobile: https://media.wordfly.com/wordfly/mome/mobile/sfo.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/sfo.jpg"
 tags:
   - event
 permalink: /emails/sfo/

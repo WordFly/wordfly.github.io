@@ -5,7 +5,7 @@ date: 2019-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/nelson-atkins-shop.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/nelson-atkins-shop.jpg"
-  mobile: https://media.wordfly.com/wordfly/mome/mobile/nelson-atkins-shop.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/nelson-atkins-shop.jpg"
 tags:
   - shop
 permalink: /emails/nelson-atkins-shop/

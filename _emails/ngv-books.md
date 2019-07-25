@@ -5,7 +5,7 @@ date: 2018-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/ngv-books.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/ngv-books.jpg"
-  mobile: https://media.wordfly.com/wordfly/mome/mobile/ngv-books.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/ngv-books.jpg"
 tags:
   - shop
 permalink: /emails/ngv-books/

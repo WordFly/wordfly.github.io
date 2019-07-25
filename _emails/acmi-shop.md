@@ -5,7 +5,7 @@ date: 2018-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/acmi-shop.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/acmi-shop.jpg"
-  mobile: https://media.wordfly.com/wordfly/mome/mobile/acmi-shop.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/acmi-shop.jpg"
 tags:
   - shop
 permalink: /emails/acmi-shop/

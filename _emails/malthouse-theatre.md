@@ -5,7 +5,7 @@ date: 2018-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/malthouse-theatre.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/malthouse-theatre.jpg"
-  mobile: https://media.wordfly.com/wordfly/mome/mobile/malthouse-theatre.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/malthouse-theatre.jpg"
 tags:
   - newsletter
 permalink: /emails/malthouse-theatre/

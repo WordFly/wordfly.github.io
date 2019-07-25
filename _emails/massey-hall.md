@@ -5,7 +5,7 @@ date: 2019-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/massey-hall.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/massey-hall.jpg"
-  mobile: https://media.wordfly.com/wordfly/mome/mobile/massey-hall.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/massey-hall.jpg"
 tags:
   - shop
 permalink: /emails/massey-hall/

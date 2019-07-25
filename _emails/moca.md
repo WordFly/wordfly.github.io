@@ -5,7 +5,7 @@ date: 2019-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/moca.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/moca.jpg"
-  mobile: https://media.wordfly.com/wordfly/mome/mobile/moca.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/moca.jpg"
 tags:
   - automation
 permalink: /emails/moca/

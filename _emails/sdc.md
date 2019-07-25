@@ -5,7 +5,7 @@ date: 2019-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/sdc.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/sdc.jpg"
-  mobile: https://media.wordfly.com/wordfly/mome/mobile/sdc.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/sdc.jpg"
 tags:
   - automation
 permalink: /emails/sdc/

@@ -5,7 +5,7 @@ date: 2018-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/australian-ballet.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/australian-ballet.jpg"
-  mobile: https://media.wordfly.com/wordfly/mome/mobile/australian-ballet.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/australian-ballet.jpg"
 tags:
   - event
 permalink: /emails/australian-ballet/

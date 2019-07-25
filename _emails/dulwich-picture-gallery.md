@@ -5,7 +5,7 @@ date: 2019-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/dulwich-picture-gallery.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/dulwich-picture-gallery.jpg"
-  mobile: https://media.wordfly.com/wordfly/mome/mobile/dulwich-picture-gallery.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/dulwich-picture-gallery.jpg"
 tags:
   - newsletter
 permalink: /emails/dulwich-picture-gallery/

@@ -5,7 +5,7 @@ date: 2019-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/scimuseum-shop.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/scimuseum-shop.jpg"
-  mobile: https://media.wordfly.com/wordfly/mome/mobile/scimuseum-shop.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/scimuseum-shop.jpg"
 tags:
   - shop
 permalink: /emails/scimuseum-shop/

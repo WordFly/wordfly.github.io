@@ -5,7 +5,7 @@ date: 2019-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/nycb.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/nycb.jpg"
-  mobile: https://media.wordfly.com/wordfly/mome/mobile/nycb.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/nycb.jpg"
 tags:
   - automation
 permalink: /emails/nycb/

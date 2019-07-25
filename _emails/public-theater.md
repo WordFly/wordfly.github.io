@@ -5,7 +5,7 @@ date: 2019-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/public-theater.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/public-theater.jpg"
-  mobile: https://media.wordfly.com/wordfly/mome/mobile/public-theater.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/public-theater.jpg"
 tags:
   - event
 permalink: /emails/public-theater/
