@@ -3,9 +3,9 @@ credit: "The Wheeler Centre"
 title: "Companion planting."
 date: 2019-01-01T00:00:00-0800
 images:
-  desktop: "/assets/images/emails/desktop/wheeler-centre.jpg"
-  grid: "/assets/images/emails/grid/wheeler-centre.jpg"
-  mobile: "/assets/images/emails/mobile/wheeler-centre.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/wheeler-centre.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/wheeler-centre.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/wheeler-centre.jpg"
 tags:
   - newsletter
 permalink: /emails/wheeler-centre/

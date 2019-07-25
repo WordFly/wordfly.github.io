@@ -3,9 +3,9 @@ credit: "The Australian Ballet"
 title: "Your chance to watch our dancers prepare for Cinderella"
 date: 2018-01-01T00:00:00-0800
 images:
-  desktop: "/assets/images/emails/desktop/australian-ballet.jpg"
-  grid: "/assets/images/emails/grid/australian-ballet.jpg"
-  mobile: /assets/images/emails/mobile/australian-ballet.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/australian-ballet.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/australian-ballet.jpg"
+  mobile: https://media.wordfly.com/wordfly/mome/mobile/australian-ballet.jpg"
 tags:
   - event
 permalink: /emails/australian-ballet/

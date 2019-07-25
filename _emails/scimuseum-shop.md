@@ -3,9 +3,9 @@ credit: "Science Museum"
 title: "The Periodic Table is taking over"
 date: 2019-01-01T00:00:00-0800
 images:
-  desktop: "/assets/images/emails/desktop/scimuseum-shop.jpg"
-  grid: "/assets/images/emails/grid/scimuseum-shop.jpg"
-  mobile: /assets/images/emails/mobile/scimuseum-shop.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/scimuseum-shop.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/scimuseum-shop.jpg"
+  mobile: https://media.wordfly.com/wordfly/mome/mobile/scimuseum-shop.jpg"
 tags:
   - shop
 permalink: /emails/scimuseum-shop/

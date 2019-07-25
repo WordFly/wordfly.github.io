@@ -3,9 +3,9 @@ credit: "Dallas Zoo"
 title: "Join Us For Adults-Only Dino Night Tomorrow!"
 date: 2019-01-01T00:00:00-0800
 images:
-  desktop: "/assets/images/emails/desktop/dallas-zoo.jpg"
-  grid: "/assets/images/emails/grid/dallas-zoo.jpg"
-  mobile: /assets/images/emails/mobile/dallas-zoo.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/dallas-zoo.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/dallas-zoo.jpg"
+  mobile: https://media.wordfly.com/wordfly/mome/mobile/dallas-zoo.jpg"
 tags:
   - event
 permalink: /emails/dallas-zoo/

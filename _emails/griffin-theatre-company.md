@@ -3,9 +3,9 @@ credit: "Griffin Theatre Company"
 title: "We can't wait to see you for 'Exhale' by Black Birds!"
 date: 2019-01-01T00:00:00-0800
 images:
-  desktop: "/assets/images/emails/desktop/griffin-theatre-company.jpg"
-  grid: "/assets/images/emails/grid/griffin-theatre-company.jpg"
-  mobile: "/assets/images/emails/mobile/griffin-theatre-company.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/griffin-theatre-company.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/griffin-theatre-company.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/griffin-theatre-company.jpg"
 tags:
   - automation
 permalink: /emails/griffin-theatre-company/

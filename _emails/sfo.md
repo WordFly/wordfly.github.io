@@ -3,9 +3,9 @@ credit: "San Francisco Opera"
 title: "Experience the rush of first love in ​​‘Romeo and Juliet’"
 date: 2019-01-01T00:00:00-0800
 images:
-  desktop: "/assets/images/emails/desktop/sfo.jpg"
-  grid: "/assets/images/emails/grid/sfo.jpg"
-  mobile: /assets/images/emails/mobile/sfo.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/sfo.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/sfo.jpg"
+  mobile: https://media.wordfly.com/wordfly/mome/mobile/sfo.jpg"
 tags:
   - event
 permalink: /emails/sfo/

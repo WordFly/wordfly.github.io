@@ -3,9 +3,9 @@ credit: "Theatre Royal Plymouth"
 title: "See this Olivier, Tony and Pulitzer Prize-winning masterpiece from £10"
 date: 2019-01-01T00:00:00-0800
 images:
-  desktop: "/assets/images/emails/desktop/trp-event.jpg"
-  grid: "/assets/images/emails/grid/trp-event.jpg"
-  mobile: /assets/images/emails/mobile/trp-event.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/trp-event.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/trp-event.jpg"
+  mobile: https://media.wordfly.com/wordfly/mome/mobile/trp-event.jpg"
 tags:
   - newsletter
 permalink: /emails/trp-event/

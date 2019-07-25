@@ -3,9 +3,9 @@ credit: "Dulwich Picture Gallery"
 title: "Diaries at the ready: our summer of events just announced 🌞"
 date: 2019-01-01T00:00:00-0800
 images:
-  desktop: "/assets/images/emails/desktop/dulwich-picture-gallery.jpg"
-  grid: "/assets/images/emails/grid/dulwich-picture-gallery.jpg"
-  mobile: /assets/images/emails/mobile/dulwich-picture-gallery.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/dulwich-picture-gallery.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/dulwich-picture-gallery.jpg"
+  mobile: https://media.wordfly.com/wordfly/mome/mobile/dulwich-picture-gallery.jpg"
 tags:
   - newsletter
 permalink: /emails/dulwich-picture-gallery/

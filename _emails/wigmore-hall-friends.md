@@ -3,9 +3,9 @@ credit: "Wigmore Hall"
 title: "Friends Magazine: The Score - Spring 2019"
 date: 2018-01-01T00:00:00-0800
 images:
-  desktop: "/assets/images/emails/desktop/wigmore-hall-friends.jpg"
-  grid: "/assets/images/emails/grid/wigmore-hall-friends.jpg"
-  mobile: "/assets/images/emails/mobile/wigmore-hall-friends.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/wigmore-hall-friends.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/wigmore-hall-friends.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/wigmore-hall-friends.jpg"
 tags:
   - newsletter
 permalink: /emails/wigmore-hall-friends/

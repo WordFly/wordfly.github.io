@@ -3,9 +3,9 @@ credit: "Australian Chamber Orchestra"
 title: "Tom, welcome to the ACO!"
 date: 2019-01-01T00:00:00-0800
 images:
-  desktop: "/assets/images/emails/desktop/australian-chamber-orchestra.jpg"
-  grid: "/assets/images/emails/grid/australian-chamber-orchestra.jpg"
-  mobile: "/assets/images/emails/mobile/australian-chamber-orchestra.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/australian-chamber-orchestra.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/australian-chamber-orchestra.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/australian-chamber-orchestra.jpg"
 tags:
   - automation
 permalink: /emails/australian-chamber-orchestra/

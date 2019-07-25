@@ -3,9 +3,9 @@ credit: "National WWI Museum and Memorial"
 title: "New Exhibition, Events and Happy Hours for Modernist members!"
 date: 2019-01-01T00:00:00-0800
 images:
-  desktop: "/assets/images/emails/desktop/nwwimm-modernists.jpg"
-  grid: "/assets/images/emails/grid/nwwimm-modernists.jpg"
-  mobile: "/assets/images/emails/mobile/nwwimm-modernists.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/nwwimm-modernists.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/nwwimm-modernists.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/nwwimm-modernists.jpg"
 tags:
   - newsletter
 permalink: /emails/nwwimm-modernists/

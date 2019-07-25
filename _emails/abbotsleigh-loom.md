@@ -3,9 +3,9 @@ credit: "Abbotsleigh"
 title: "AOGU Newsletter, The Loom May 2019"
 date: 2019-01-01T00:00:00-0800
 images:
-  desktop: "/assets/images/emails/desktop/abbotsleigh-loom.jpg"
-  grid: "/assets/images/emails/grid/abbotsleigh-loom.jpg"
-  mobile: "/assets/images/emails/mobile/abbotsleigh-loom.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/abbotsleigh-loom.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/abbotsleigh-loom.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/abbotsleigh-loom.jpg"
 tags:
   - newsletter
 permalink: /emails/abbotsleigh-loom/

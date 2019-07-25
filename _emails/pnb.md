@@ -3,9 +3,9 @@ credit: "Pacific Northwest Ballet"
 title: "Quick: Take 30% off A Midsummer Night's Dream!"
 date: 2019-01-01T00:00:00-0800
 images:
-  desktop: "/assets/images/emails/desktop/pnb.jpg"
-  grid: "/assets/images/emails/grid/pnb.jpg"
-  mobile: /assets/images/emails/mobile/pnb.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/pnb.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/pnb.jpg"
+  mobile: https://media.wordfly.com/wordfly/mome/mobile/pnb.jpg"
 tags:
   - event
 permalink: /emails/pnb/

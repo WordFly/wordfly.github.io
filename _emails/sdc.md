@@ -3,9 +3,9 @@ credit: "Sydney Dance Company"
 title: "Thank you for attending Bonachela / Nankivell / Lane"
 date: 2019-01-01T00:00:00-0800
 images:
-  desktop: "/assets/images/emails/desktop/sdc.jpg"
-  grid: "/assets/images/emails/grid/sdc.jpg"
-  mobile: /assets/images/emails/mobile/sdc.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/sdc.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/sdc.jpg"
+  mobile: https://media.wordfly.com/wordfly/mome/mobile/sdc.jpg"
 tags:
   - automation
 permalink: /emails/sdc/

@@ -3,9 +3,9 @@ credit: "Houston Grand Opera"
 title: "The perfect opera is waiting for you"
 date: 2019-01-01T00:00:00-0800
 images:
-  desktop: "/assets/images/emails/desktop/hgo-drama.jpg"
-  grid: "/assets/images/emails/grid/hgo-drama.jpg"
-  mobile: /assets/images/emails/mobile/hgo-drama.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/hgo-drama.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/hgo-drama.jpg"
+  mobile: https://media.wordfly.com/wordfly/mome/mobile/hgo-drama.jpg"
 tags:
   - event
 permalink: /emails/hgo-drama/

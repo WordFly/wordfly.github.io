@@ -3,9 +3,9 @@ credit: "Wexner Center for the Arts"
 title: "onScreen at the Wex Jan 17–23"
 date: 2019-01-01T00:00:00-0800
 images:
-  desktop: "/assets/images/emails/desktop/wexner.jpg"
-  grid: "/assets/images/emails/grid/wexner.jpg"
-  mobile: /assets/images/emails/mobile/wexner.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/wexner.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/wexner.jpg"
+  mobile: https://media.wordfly.com/wordfly/mome/mobile/wexner.jpg"
 tags:
   - newsletter
 permalink: /emails/wexner/

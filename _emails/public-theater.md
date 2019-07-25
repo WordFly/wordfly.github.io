@@ -3,9 +3,9 @@ credit: "The Public Theater"
 title: "Join Us for our 2019 Gala: WOMEN OF THE PUBLIC"
 date: 2019-01-01T00:00:00-0800
 images:
-  desktop: "/assets/images/emails/desktop/public-theater.jpg"
-  grid: "/assets/images/emails/grid/public-theater.jpg"
-  mobile: /assets/images/emails/mobile/public-theater.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/public-theater.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/public-theater.jpg"
+  mobile: https://media.wordfly.com/wordfly/mome/mobile/public-theater.jpg"
 tags:
   - event
 permalink: /emails/public-theater/

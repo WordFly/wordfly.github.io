@@ -3,9 +3,9 @@ credit: "ICA Boston"
 title: "April at the ICA"
 date: 2019-01-01T00:00:00-0800
 images:
-  desktop: "/assets/images/emails/desktop/ica-boston-april.jpg"
-  grid: "/assets/images/emails/grid/ica-boston-april.jpg"
-  mobile: "/assets/images/emails/mobile/ica-boston-april.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/ica-boston-april.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/ica-boston-april.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/ica-boston-april.jpg"
 tags:
   - newsletter
 permalink: /emails/ica-boston-april/

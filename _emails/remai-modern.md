@@ -3,9 +3,9 @@ credit: "Remai Modern"
 title: "Our summer program launch party is tomorrow night!"
 date: 2019-01-01T00:00:00-0800
 images:
-  desktop: "/assets/images/emails/desktop/remai-modern.jpg"
-  grid: "/assets/images/emails/grid/remai-modern.jpg"
-  mobile: "/assets/images/emails/mobile/remai-modern.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/remai-modern.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/remai-modern.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/remai-modern.jpg"
 tags:
   - event
 permalink: /emails/remai-modern/
