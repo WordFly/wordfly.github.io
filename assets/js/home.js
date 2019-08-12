@@ -210,7 +210,7 @@ window.home = (() => {
               <nav class="share">
                 <ul>
                   <li>
-                    <a data-hint="Share on Twitter" href="https://twitter.com/intent/tweet?hashtags=emailmarketing%2C%20mome&original_referer=${encodedHref}&ref_src=twsrc%5Etfw&text=AOGU%20Newsletter%2C%20The%20Loom%20May%202019&tw_p=tweetbutton&url=${encodedHref}&via=emailmuseum" target="_blank">
+                    <a data-hint="Share on Twitter" href="https://twitter.com/intent/tweet?hashtags=emailmarketing%2C%20mome&original_referer=${encodedHref}&ref_src=twsrc%5Etfw&text=${encodeURIComponent(model.title)}&tw_p=tweetbutton&url=${encodedHref}&via=emailmuseum" target="_blank">
                       <i class="icon twitter"></i>
                       <span class="offscreen">Tweet</span>
                     </a>
