@@ -1,14 +1,14 @@
 ---
-credit: "Southbank Centre"
-title: "Welcome to Southbank Centre - thanks for signing up"
+credit: "Sydney Theatre Company"
+title: "Hello, can we help you?"
 date: 2019-01-01T00:00:00-0800
 images:
-  desktop: "https://media.wordfly.com/wordfly/mome/desktop/southbank-welcome.jpg"
-  grid: "https://media.wordfly.com/wordfly/mome/grid/southbank-welcome.jpg"
-  mobile: "https://media.wordfly.com/wordfly/mome/mobile/southbank-welcome.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/stc-subs.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/stc-subs.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/stc-subs.jpg"
 tags:
   - automation
-permalink: /emails/southbank-welcome/
+permalink: /emails/stc-subs/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
 

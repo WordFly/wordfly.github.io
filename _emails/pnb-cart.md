@@ -1,6 +1,6 @@
 ---
 credit: "Pacific Northwest Ballet"
-title: "Don't forget your Midsummer tickets!"
+title: "Don‘t forget your Midsummer tickets!"
 date: 2019-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/pnb-cart.jpg"
