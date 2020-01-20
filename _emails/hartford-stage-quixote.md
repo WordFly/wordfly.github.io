@@ -1,14 +1,14 @@
 ---
-credit: "Griffin Theatre Company"
-title: "We can't wait to see you for 'Exhale' by Black Birds!"
+credit: "Hartford Stage"
+title: "See Sesame Street’s Luis (Emilio Delgado) in Quixote Nuevo"
 date: 2019-01-01T00:00:00-0800
 images:
-  desktop: "https://media.wordfly.com/wordfly/mome/desktop/griffin-theatre-company.jpg"
-  grid: "https://media.wordfly.com/wordfly/mome/grid/griffin-theatre-company.jpg"
-  mobile: "https://media.wordfly.com/wordfly/mome/mobile/griffin-theatre-company.jpg"
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/hartford-stage-quixote.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/hartford-stage-quixote.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/hartford-stage-quixote.jpg"
 tags:
-  - automation
-permalink: /emails/griffin-theatre-company/
+  - event
+permalink: /emails/hartford-stage-quixote/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
 
