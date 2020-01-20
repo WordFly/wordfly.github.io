@@ -30,7 +30,7 @@ Adding emails
 
 1. On Mac, create three folders: /desktop/ and /mobile/ and place PNGs in there for processing. Create /grid/ folder and place desktop images in there.
 2. Remove -desktop and -mobile from file names and make sure file names are unique from others already on the site
-3. In Photoshop, go to File > Scripts > Image Processor. Choose folder for processing. Settings are JPEG Quality 5. Desktop: 2000x30000. Mobile: 680x30000. Grid: 440x30000. Run images.
+3. In Photoshop, go to File > Scripts > Image Processor. Choose folder for processing. Settings are JPEG Quality 5. Desktop: 2000x30000. Mobile: 640x30000. Grid: 440x30000. Run images.
 4. Upload processed images to wordfly account on app.wordfly.com. /mome/desktop/, /mome/grid/, /mome/desktop/
 5. Open GitHub project in Atom
 6. Add new /.md file for each image set
