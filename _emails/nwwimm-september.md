@@ -1,7 +1,7 @@
 ---
 credit: "National WWI Museum and Memorial"
 title: "Diggers and Doughboys Exhibition Opening"
-date: 2018-01-01T00:00:00-0800
+date: 2019-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/nwwimm-september.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/nwwimm-september.jpg"

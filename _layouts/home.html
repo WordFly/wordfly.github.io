@@ -21,17 +21,18 @@ layout: default
       </li>
     </ul>
   </nav>
-  {%- if site.emails.size > 0 -%}
+  {% if site.emails.size > 0 %}
   <ol class="emails">
-    {%- for email in site.emails -%}
+    {% assign sorted = site.emails | sort: 'date' | reverse %}
+    {% for email in sorted %}
     <li class="fade" id="{{ email.slug }}" data-tags="{{ email.tags | join: " " }}">
       <a href="{{ email.url | relative_url }}">
         <img alt="{{ email.title }}" src="{{ email.images.grid }}" />
       </a>
     </li>
-    {%- endfor -%}
+    {% endfor %}
   </ol>
-  {%- endif -%}
+  {% endif %}
 </section>
 <script src="/assets/js/home.js"></script>
 <script>

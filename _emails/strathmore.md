@@ -1,7 +1,7 @@
 ---
 credit: "Strathmore"
 title: "Creative Crafts Council Exhibition Opens Today"
-date: 2018-01-01T00:00:00-0800
+date: 2019-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/strathmore.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/strathmore.jpg"

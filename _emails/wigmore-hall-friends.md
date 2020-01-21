@@ -1,7 +1,7 @@
 ---
 credit: "Wigmore Hall"
 title: "Friends Magazine: The Score - Spring 2019"
-date: 2018-01-01T00:00:00-0800
+date: 2019-01-01T00:00:00-0800
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/wigmore-hall-friends.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/wigmore-hall-friends.jpg"
