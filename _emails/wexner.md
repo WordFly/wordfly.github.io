@@ -2,6 +2,7 @@
 credit: "Wexner Center for the Arts"
 title: "onScreen at the Wex Jan 17–23"
 date: 2019-01-01T00:00:00-0800
+dateadded: 2019-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/wexner.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/wexner.jpg"

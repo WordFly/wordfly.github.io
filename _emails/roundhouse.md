@@ -2,6 +2,7 @@
 credit: "Roundhouse"
 title: "Trans theatre makers, budding journalists, poets, performers - we've got projects with your name on them."
 date: 2019-01-01T00:00:00-0800
+dateadded: 2019-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/roundhouse.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/roundhouse.jpg"

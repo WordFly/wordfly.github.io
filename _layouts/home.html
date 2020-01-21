@@ -23,7 +23,7 @@ layout: default
   </nav>
   {% if site.emails.size > 0 %}
   <ol class="emails">
-    {% assign sorted = site.emails | sort: 'date' | reverse %}
+    {% assign sorted = site.emails | sort: 'dateadded' | reverse %}
     {% for email in sorted %}
     <li class="fade" id="{{ email.slug }}" data-tags="{{ email.tags | join: " " }}">
       <a href="{{ email.url | relative_url }}">

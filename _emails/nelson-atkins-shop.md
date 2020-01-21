@@ -2,6 +2,7 @@
 credit: "The Nelson-Atkins Museum of Art"
 title: "Happy spring shopping!"
 date: 2019-01-01T00:00:00-0800
+dateadded: 2019-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/nelson-atkins-shop.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/nelson-atkins-shop.jpg"

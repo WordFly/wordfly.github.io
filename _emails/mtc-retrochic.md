@@ -2,6 +2,7 @@
 credit: "Melbourne Theatre Company"
 title: "Your MTC Subscriber News for January 2020"
 date: 2020-01-01T00:00:00-0800
+dateadded: 2020-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/mtc-retrochic.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/mtc-retrochic.jpg"

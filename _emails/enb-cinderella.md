@@ -2,6 +2,7 @@
 credit: "English National Ballet"
 title: "Casting for Cinderella, My First Ballet returns to Richmond + more"
 date: 2019-01-01T00:00:00-0800
+dateadded: 2020-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/enb-cinderella.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/enb-cinderella.jpg"

@@ -2,6 +2,7 @@
 credit: "Goodman Theatre"
 title: "Your Upcoming Performance of \"Twilight Bowl\""
 date: 2019-01-01T00:00:00-0800
+dateadded: 2019-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/goodman-reminder.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/goodman-reminder.jpg"

@@ -2,6 +2,7 @@
 credit: "ICA Boston"
 title: "April at the ICA"
 date: 2019-01-01T00:00:00-0800
+dateadded: 2019-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/ica-boston-april.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/ica-boston-april.jpg"
