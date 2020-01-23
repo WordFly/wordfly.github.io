@@ -28,7 +28,7 @@ JavaScript is processed through [Babel](https://babeljs.io/) to convert modern E
 Adding emails
 --------------
 
-1. On Mac, create three folders: /desktop/ and /mobile/ and place PNGs in there for processing. Create /grid/ folder and place desktop images in there.
+1. On Mac, create three folders: /desktop/ and /mobile/ and place PNGs in there for processing. Create /grid/ folder and place desktop images in there. (Note about screenshots: Take screenshots on a retina screen only. All desktop emails should be 1000px wide when screenshot is taken. This will create a 2000px-wide image. All mobile emails should be 320px wide when screenshot is taken. This will create a 640px-wide image.)
 2. Remove -desktop and -mobile from file names and make sure file names are unique from others already on the site
 3. In Photoshop, go to File > Scripts > Image Processor. Choose folder for processing. Settings are JPEG Quality 5. Desktop: 2000x30000. Mobile: 640x30000. Grid: 440x30000. Run images.
 4. Upload processed images to wordfly account on app.wordfly.com. /mome/desktop/, /mome/grid/, /mome/desktop/
