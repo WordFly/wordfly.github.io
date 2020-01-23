@@ -2,6 +2,7 @@
 credit: "Royal Albert Hall"
 title: "Exclusive photos: Rufus Wainwright returns to the Royal Albert Hall"
 date: 2019-01-01T00:00:00-0800
+dateadded: 2019-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/royal-albert-hall.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/royal-albert-hall.jpg"

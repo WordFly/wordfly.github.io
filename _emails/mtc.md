@@ -2,6 +2,7 @@
 credit: "Melbourne Theatre Company"
 title: "Your MTC News | February 2019 + The Lady in the Van extended!"
 date: 2019-01-01T00:00:00-0800
+dateadded: 2019-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/mtc.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/mtc.jpg"

@@ -2,6 +2,7 @@
 credit: "Community Arts Music Association of Santa Barbara"
 title: "Perlman, Salonen, McGegan — CAMA's Centennial — 100th Concert Season — Season Subscriptions Still Available!"
 date: 2018-01-01T00:00:00-0800
+dateadded: 2019-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/cama-concerts.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/cama-concerts.jpg"

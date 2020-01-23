@@ -2,6 +2,7 @@
 credit: "Massey Hall"
 title: "Limited number of Live at Massey Hall Vol 1 vinyl available now at masseyhall.com"
 date: 2019-01-01T00:00:00-0800
+dateadded: 2019-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/massey-hall.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/massey-hall.jpg"

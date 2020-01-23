@@ -2,6 +2,7 @@
 credit: "Royal Danish Theatre"
 title: "Sommernyhed: minidokumentar ⭐"
 date: 2019-01-01T00:00:00-0800
+dateadded: 2019-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/royal-danish-theatre.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/royal-danish-theatre.jpg"

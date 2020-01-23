@@ -2,6 +2,7 @@
 credit: "National Portrait Gallery"
 title: "Easter Offers: Martin Parr"
 date: 2019-01-01T00:00:00-0800
+dateadded: 2019-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/npg-shop.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/npg-shop.jpg"

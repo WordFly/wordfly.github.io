@@ -2,6 +2,7 @@
 credit: "City Recital Hall"
 title: "Reminder - You're Invited: Opening of The Exhibition Project"
 date: 2019-01-01T00:00:00-0800
+dateadded: 2019-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/city-recital-hall.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/city-recital-hall.jpg"

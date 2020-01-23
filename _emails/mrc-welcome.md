@@ -2,6 +2,7 @@
 credit: "Melbourne Recital Centre"
 title: "Welcome to the Best Place to Hear!"
 date: 2019-01-01T00:00:00-0800
+dateadded: 2019-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/mrc-welcome.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/mrc-welcome.jpg"

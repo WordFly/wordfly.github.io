@@ -2,6 +2,7 @@
 credit: "Remai Modern"
 title: "Our summer program launch party is tomorrow night!"
 date: 2019-01-01T00:00:00-0800
+dateadded: 2019-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/remai-modern.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/remai-modern.jpg"

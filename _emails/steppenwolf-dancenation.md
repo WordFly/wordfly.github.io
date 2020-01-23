@@ -2,6 +2,7 @@
 credit: "Steppenwolf Theatre Company"
 title: "Start your 2020 with a 10/10 show"
 date: 2020-01-01T00:00:00-0800
+dateadded: 2020-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/steppenwolf-dancenation.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/steppenwolf-dancenation.jpg"

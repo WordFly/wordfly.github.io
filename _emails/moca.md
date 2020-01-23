@@ -2,6 +2,7 @@
 credit: "Museum of Contemporary Art Toronto"
 title: "Your event at MOCA is coming up"
 date: 2019-01-01T00:00:00-0800
+dateadded: 2019-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/moca.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/moca.jpg"
