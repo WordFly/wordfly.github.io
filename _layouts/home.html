@@ -47,6 +47,6 @@ layout: default
     // add unsupported message
     elWrapper.appendChild(elMessageContainer);
   } else {
-    window.home.getInstance(JSON.parse(decodeURIComponent("{{ site.emails | jsonify | uri_escape }}")));
+    window.home.getInstance(JSON.parse(decodeURIComponent("{{ site.emails | sort: 'dateadded' | reverse | jsonify | uri_escape }}")));
   }
 </script>

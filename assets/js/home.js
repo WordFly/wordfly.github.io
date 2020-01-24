@@ -317,11 +317,7 @@ window.home = (() => {
         }, 600);
       });
       // re-map `previous` and `next` for each model in the collection
-      collection.forEach((model, index) => {
-        model.previous = index - 1 > -1 ? collection[index - 1] : null;
-        model.next = index + 1 < collection.length ? collection[index + 1] : null;
-      });
-      emailDetails.collection = collection;
+      remapPagination(collection);
     }
 
     // update push state
@@ -330,6 +326,15 @@ window.home = (() => {
       e.preventDefault();
       e.stopPropagation();
       emailDetails.state.value = `/${elTarget.id}`;
+    }
+
+    function remapPagination(data) {
+      // re-map `previous` and `next` for each email
+      data.forEach((model, index) => {
+        model.previous = index - 1 > -1 ? data[index - 1] : null;
+        model.next = index + 1 < data.length ? data[index + 1] : null;
+      });
+      emailDetails.collection = data;
     }
 
     // hide / show filters
@@ -360,6 +365,8 @@ window.home = (() => {
         setTimeout(() => done = true, 600);
       }, false);
     });
+    // re-map `previous` and `next` for each email
+    remapPagination(data);
   }
 
   return {
