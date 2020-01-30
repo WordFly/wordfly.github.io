@@ -19,6 +19,13 @@ layout: default
       <li>
         <button data-tag="shop">Shops</button>
       </li>
+      <li>
+        <button data-action="show-search">
+          <i class="icon search"></i>
+          <span class="offscreen">Search</span>
+        </button>
+        <input id="search" type="search" name="search" placeholder="Type your search here" />
+      </li>
     </ul>
   </nav>
   {% if site.emails.size > 0 %}

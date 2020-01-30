@@ -5,8 +5,8 @@ body {
     button {
       &:not(.active) {
         &:hover {
-          color: #82d1e1;
           border-bottom-color: #82d1e1;
+          color: #82d1e1;
         }
       }
     }
@@ -20,6 +20,14 @@ body {
       background-position: left -30vw;
       background-size: 60%;
     }
+    ul {
+      &.tags {
+        li {
+          border-color: #82d1e1;
+          color: #82d1e1;
+        }
+      }
+    }
     // hover display for icons
     @include icon-on-hover('aquamarine-blue');
   }
@@ -29,8 +37,8 @@ body {
     button {
       &:not(.active) {
         &:hover {
-          color: #416cb4;
           border-bottom-color: #416cb4;
+          color: #416cb4;
         }
       }
     }
@@ -44,6 +52,14 @@ body {
       background-position: left bottom;
       background-size: 70%;
     }
+    ul {
+      &.tags {
+        li {
+          border-color: #416cb4;
+          color: #416cb4;
+        }
+      }
+    }
     // hover display for icons
     @include icon-on-hover('san-marino');
   }
@@ -53,8 +69,8 @@ body {
     button {
       &:not(.active) {
         &:hover {
-          color: #eb3794;
           border-bottom-color: #eb3794;
+          color: #eb3794;
         }
       }
     }
@@ -67,6 +83,14 @@ body {
       background-image: url(images/backgrounds/background-3.svg);
       background-position: -27vw -4vw;
       background-size: 130%;
+    }
+    ul {
+      &.tags {
+        li {
+          border-color: #eb3794;
+          color: #eb3794;
+        }
+      }
     }
     // hover display for icons
     @include icon-on-hover('french-rose');

@@ -91,7 +91,7 @@ window.home = (() => {
       }
     }
 
-    onActionClick(e) {
+    onFilterClick(e) {
       const elTarget = e.currentTarget,
         action = elTarget.dataset.action;
       if(action === 'close') {
@@ -160,8 +160,10 @@ window.home = (() => {
       const elPageWrapper = this.elPageWrapper,
         elContainer = elPageWrapper.querySelector('.email-details') || document.createElement('article'),
         encodedHref = encodeURIComponent(window.location.href);
+      let tagMarkup = '';
       elContainer.id = `${model.slug}-details`;
       elContainer.classList.add('email-details');
+      model.tags.forEach(t => tagMarkup += `<li>${t}</li>\n`);
       // build out container's contents
       elContainer.innerHTML = `
         <div class="inner">
@@ -191,38 +193,43 @@ window.home = (() => {
                 <h2>${model.credit}, ${new Date(model.date.replace(/\s/, 'T').replace(/\s.*/, '')).getUTCFullYear()}</h2>
                 <h1>${model.title}</h1>
               </figcaption>
-              <nav class="views">
-                <ul>
-                  <li>
-                    <button class="active" data-action="toggle-desktop-view" data-hint="Show desktop">
-                      <i class="icon desktop"></i>
-                      <span class="offscreen">Desktop</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button data-action="toggle-mobile-view" data-hint="Show mobile">
-                      <i class="icon mobile"></i>
-                      <span class="offscreen">Mobile</span>
-                    </button>
-                  </li>
+              <section>
+                <ul class="tags">
+                  ${tagMarkup}
                 </ul>
-              </nav>
-              <nav class="share">
-                <ul>
-                  <li>
-                    <a data-hint="Share on Twitter" href="https://twitter.com/intent/tweet?hashtags=emailmarketing%2C%20mome&original_referer=${encodedHref}&ref_src=twsrc%5Etfw&text=${encodeURIComponent(model.title)}&tw_p=tweetbutton&url=${encodedHref}&via=emailmuseum" target="_blank">
-                      <i class="icon twitter"></i>
-                      <span class="offscreen">Tweet</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a data-hint="Download image" download href="${model.images.desktop}" target="_blank">
-                      <i class="icon download"></i>
-                      <span class="offscreen">Download</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+                <nav class="views">
+                  <ul>
+                    <li>
+                      <button class="active" data-action="toggle-desktop-view" data-hint="Show desktop">
+                        <i class="icon desktop"></i>
+                        <span class="offscreen">Desktop</span>
+                      </button>
+                    </li>
+                    <li>
+                      <button data-action="toggle-mobile-view" data-hint="Show mobile">
+                        <i class="icon mobile"></i>
+                        <span class="offscreen">Mobile</span>
+                      </button>
+                    </li>
+                  </ul>
+                </nav>
+                <nav class="share">
+                  <ul>
+                    <li>
+                      <a data-hint="Share on Twitter" href="https://twitter.com/intent/tweet?hashtags=emailmarketing%2C%20mome&original_referer=${encodedHref}&ref_src=twsrc%5Etfw&text=${encodeURIComponent(model.title)}&tw_p=tweetbutton&url=${encodedHref}&via=emailmuseum" target="_blank">
+                        <i class="icon twitter"></i>
+                        <span class="offscreen">Tweet</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a data-hint="Download image" download href="${model.images.desktop}" target="_blank">
+                        <i class="icon download"></i>
+                        <span class="offscreen">Download</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </section>
               <img alt="${model.title} - desktop view" class="desktop-view active" src="${model.images.desktop}" />
               <img alt="${model.title} - mobile view" class="mobile-view" src="${model.images.mobile}" />
             </figure>
@@ -230,7 +237,7 @@ window.home = (() => {
         </div>
       `;
       Array.from(elContainer.querySelectorAll('[data-action]')).forEach(el => {
-        el.addEventListener('click', this.onActionClick.bind(this), false);
+        el.addEventListener('click', this.onFilterClick.bind(this), false);
       });
       elPageWrapper.appendChild(elContainer);
       elContainer.querySelector('img.active').addEventListener('load', this.onActiveImageLoad.bind(this), { once: true });
@@ -272,7 +279,10 @@ window.home = (() => {
 
   function initialize(data) {
     const emailDetails = new EmailDetails(data),
-      masonryGrid = new MasonryGrid();
+      masonryGrid = new MasonryGrid(),
+      elSearch = document.getElementById('search');
+
+    let searchTimeout;
 
     // hides / shows filters
     function onNavigationClick(e) {
@@ -281,17 +291,57 @@ window.home = (() => {
       if(elTarget === elCurrentTarget || elTarget.nodeName === 'BUTTON') elCurrentTarget.classList.toggle('open');
     }
 
-    // apply filter to email grid
+    // apply tag filter to email grid
     function onFilterClick(e) {
-      const filter = e.target.dataset.tag,
-        collection = filter !== 'all' ? data.filter(m => m.tags.includes(filter)) : data,
-        ids = collection.map(m => m.slug),
+      const elTarget = e.currentTarget,
+        filter = elTarget.dataset.tag,
+        currentValue = elSearch.value;
+      // clear out current search value
+      elSearch.value = '';
+      if(filter) {
+        filterList(filter !== 'all' ? data.filter(m => m.tags.includes(filter)) : data);
+        // add active state to new filter
+        elTarget.classList.add('active');
+      } else if(elTarget.dataset.action === 'show-search') {
+        // add active state for search
+        if(elTarget.classList.toggle('searching')) {
+          elSearch.addEventListener('transitionend', e => e.target.focus());
+        } else if(currentValue.length > 0) {
+          triggerFilterClick('all');
+        }
+      }
+    }
+
+    // apply title/credit search filter to email grid
+    function onSearchInput(e) {
+      const value = e.target.value.toLowerCase();
+      e.preventDefault();
+      if(searchTimeout) clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(filterList
+        .bind(null, data.filter(m => m.title.toLowerCase().indexOf(value) > -1 || m.credit.toLowerCase().indexOf(value) > -1)), 500);
+    }
+
+    function onSearchKeydown(e) {
+      if(e.keyCode === 13) {
+        e.target.blur();
+        document.querySelector('#gallery .filter ul').classList.remove('open');
+      }
+    }
+
+    // update push state
+    function onItemClick(e) {
+      const elTarget = e.currentTarget;
+      e.preventDefault();
+      e.stopPropagation();
+      emailDetails.state.value = `/${elTarget.id}`;
+    }
+
+    function filterList(collection) {
+      const ids = collection.map(m => m.slug),
         elWrapper = document.getElementById('gallery'),
         elActive = elWrapper.querySelector('.active');
       // remove active state from previous filter
       if(elActive) elActive.classList.remove('active');
-      // add active state to new filter
-      e.currentTarget.classList.add('active');
       Array.from(elWrapper.querySelectorAll('.emails li')).forEach(el => {
         let done = false;
         const resizeItem = () => {
@@ -320,14 +370,6 @@ window.home = (() => {
       remapPagination(collection);
     }
 
-    // update push state
-    function onItemClick(e) {
-      const elTarget = e.currentTarget;
-      e.preventDefault();
-      e.stopPropagation();
-      emailDetails.state.value = `/${elTarget.id}`;
-    }
-
     function remapPagination(data) {
       // re-map `previous` and `next` for each email
       data.forEach((model, index) => {
@@ -337,8 +379,19 @@ window.home = (() => {
       emailDetails.collection = data;
     }
 
+    function triggerFilterClick(filter) {
+      const event = document.createEvent('MouseEvent');
+      // trigger a native 'click' event on el
+      event.initEvent('click', true, true);
+      document.querySelector(`#gallery .filter [data-tag=${filter}]`).dispatchEvent(event);
+    }
+
     // hide / show filters
     document.querySelector('#gallery .filter ul').addEventListener('click', onNavigationClick);
+
+    // search input events
+    elSearch.addEventListener('input', onSearchInput);
+    elSearch.addEventListener('keydown', onSearchKeydown);
 
     Array.from(document.querySelectorAll('#gallery .filter button')).forEach(el => {
       // apply filter to email grid

@@ -121,6 +121,11 @@ i {
       background-image: url(map-get($icons, 'mobile-grey'));
     }
   }
+  &.search {
+    &:before {
+      background-image: url(map-get($icons, 'search-black'));
+    }
+  }
   &.twitter {
     &:before {
       background-image: url(map-get($icons, 'twitter-black'));

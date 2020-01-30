@@ -14,38 +14,45 @@ layout: default
             <h2>{{ page.credit }}, {{ page.date | date: "%Y" }}</h2>
             <h1>{{ page.title }}</h1>
           </figcaption>
-          <nav class="views">
-            <ul>
-              <li>
-                <button class="active" data-action="toggle-desktop-view" data-hint="Show desktop">
-                  <i class="icon desktop"></i>
-                  <span class="offscreen">Desktop</span>
-                </button>
-              </li>
-              <li>
-                <button data-action="toggle-mobile-view" data-hint="Show mobile">
-                  <i class="icon mobile"></i>
-                  <span class="offscreen">Mobile</span>
-                </button>
-              </li>
+          <section>
+            <ul class="tags">
+              {% for tag in page.tags %}
+              <li>{{tag}}</li>
+              {% endfor %}
             </ul>
-          </nav>
-          <nav class="share">
-            <ul>
-              <li>
-                <a data-hint="Share on Twitter" href="https://twitter.com/intent/tweet?hashtags=emailmarketing%2C%20mome&original_referer={{ site.url }}{{ page.url }}&ref_src=twsrc%5Etfw&text={{ page.title }}&tw_p=tweetbutton&url={{ site.url }}{{ page.url }}&via=emailmuseum" target="_blank">
-                  <i class="icon twitter"></i>
-                  <span class="offscreen">Tweet</span>
-                </a>
-              </li>
-              <li>
-                <a data-hint="Download image" download href="{{ page.images.desktop }}" target="_blank">
-                  <i class="icon download"></i>
-                  <span class="offscreen">Download</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
+            <nav class="views">
+              <ul>
+                <li>
+                  <button class="active" data-action="toggle-desktop-view" data-hint="Show desktop">
+                    <i class="icon desktop"></i>
+                    <span class="offscreen">Desktop</span>
+                  </button>
+                </li>
+                <li>
+                  <button data-action="toggle-mobile-view" data-hint="Show mobile">
+                    <i class="icon mobile"></i>
+                    <span class="offscreen">Mobile</span>
+                  </button>
+                </li>
+              </ul>
+            </nav>
+            <nav class="share">
+              <ul>
+                <li>
+                  <a data-hint="Share on Twitter" href="https://twitter.com/intent/tweet?hashtags=emailmarketing%2C%20mome&original_referer={{ site.url }}{{ page.url }}&ref_src=twsrc%5Etfw&text={{ page.title }}&tw_p=tweetbutton&url={{ site.url }}{{ page.url }}&via=emailmuseum" target="_blank">
+                    <i class="icon twitter"></i>
+                    <span class="offscreen">Tweet</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-hint="Download image" download href="{{ page.images.desktop }}" target="_blank">
+                    <i class="icon download"></i>
+                    <span class="offscreen">Download</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </section>
           <img alt="{{ page.title }} - desktop view" class="desktop-view active" src="{{ page.images.desktop }}" />
           <img alt="{{ page.title }} - mobile view" class="mobile-view" src="{{ page.images.mobile }}" />
         </figure>
