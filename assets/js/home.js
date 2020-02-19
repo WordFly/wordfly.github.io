@@ -184,19 +184,21 @@ window.home = (() => {
             </ul>
           </nav>
           <main>
-            <button data-action="close">
-              <i class="icon caret"></i>
-              Back to the Gallery
-            </button>
+            <div>
+              <button data-action="close">
+                <i class="icon caret"></i>
+                Back to the Gallery
+              </button>
+              <ul class="tags">
+                ${tagMarkup}
+              </ul>
+            </div>
             <figure>
               <figcaption>
                 <h2>${model.credit}, ${new Date(model.date.replace(/\s/, 'T').replace(/\s.*/, '')).getUTCFullYear()}</h2>
                 <h1>${model.title}</h1>
               </figcaption>
               <section>
-                <ul class="tags">
-                  ${tagMarkup}
-                </ul>
                 <nav class="views">
                   <ul>
                     <li>

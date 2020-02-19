@@ -125,7 +125,6 @@
 
 .email-details {
   height: 10000px;
-  padding-top: 30px;
   position: relative;
   width: 100%;
   &.loaded {
@@ -141,25 +140,24 @@
     transform: scale(0.99);
     transition: all 300ms;
     visibility: hidden;
-  }
-  section {
-    display: flex;
-    justify-content: space-between;
+    > div {
+      display: flex;
+      justify-content: space-between;
+    }
   }
   ul {
     &.tags {
       display: inline-block;
       font-family: $secondary-font-family;
-      font-size: 20px;
+      font-size: 14px;
       font-weight: bold;
-      line-height: 20px;
+      line-height: 14px;
       list-style: none;
-      margin: 10px auto 0 0;
       text-transform: capitalize;
       li {
         border: 1px solid;
         display: inline-block;
-        padding: 8px 10px 10px;
+        padding: 4px 10px 6px;
         &:not(:only-child) {
           margin-right: 5px;
         }
@@ -229,10 +227,6 @@
   button {
     &[data-action=close] {
       font-size: 15px;
-      left: 50%;
-      position: absolute;
-      top: -45px;
-      transform: translateX(-50%);
       .icon {
         display: inline-block;
         vertical-align: middle;
@@ -411,8 +405,8 @@
       ul {
         &.tags {
           display: block;
-          font-size: 16px;
-          line-height: 16px;
+          font-size: 13px;
+          line-height: 13px;
         }
       }
     }

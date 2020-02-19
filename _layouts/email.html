@@ -5,21 +5,23 @@ layout: default
   <article class="email-details loaded">
     <div class="inner">
       <main>
-        <a data-action="close" href="/">
-          <i class="icon caret"></i>
-          Back to the Gallery
-        </a>
+        <div>
+          <a data-action="close" href="/">
+            <i class="icon caret"></i>
+            Back to the Gallery
+          </a>
+          <ul class="tags">
+            {% for tag in page.tags %}
+            <li>{{tag}}</li>
+            {% endfor %}
+          </ul>
+        </div>
         <figure>
           <figcaption>
             <h2>{{ page.credit }}, {{ page.date | date: "%Y" }}</h2>
             <h1>{{ page.title }}</h1>
           </figcaption>
           <section>
-            <ul class="tags">
-              {% for tag in page.tags %}
-              <li>{{tag}}</li>
-              {% endfor %}
-            </ul>
             <nav class="views">
               <ul>
                 <li>
