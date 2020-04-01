@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/soulpepper-theatre-company.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/soulpepper-theatre-company.jpg"
 tags:
-  - newsletter
+  - automation
 permalink: /emails/soulpepper-theatre-company/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
