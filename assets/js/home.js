@@ -338,6 +338,7 @@ window.home = (() => {
       emailDetails.state.value = `/${elTarget.id}`;
     }
 
+    // TODO: take some time to figure out a better way to delay without a timers
     function filterList(collection) {
       const ids = collection.map(m => m.slug),
         elWrapper = document.getElementById('gallery'),
@@ -352,7 +353,6 @@ window.home = (() => {
           },
           hasId = ids.includes(el.id);
         el.classList.add('fade');
-        // TODO: take some time to figure out a better way to delay without a timer
         setTimeout(() => {
           if(hasId) {
             el.classList.remove('hide');
@@ -360,14 +360,16 @@ window.home = (() => {
             el.classList.add('hide');
           }
         }, 300);
-        // TODO: take some time to figure out a better way to delay without a timer
         setTimeout(() => {
           window.requestAnimationFrame(resizeItem);
           if(hasId) el.classList.remove('hide', 'fade');
-          // TODO: take some time to figure out a better way to delay without a timer
           setTimeout(() => done = true, 600);
         }, 600);
       });
+      setTimeout(() => {
+        // update current item count on wrapper
+        elWrapper.dataset.count = collection.length;
+      }, 300);
       // re-map `previous` and `next` for each model in the collection
       remapPagination(collection);
     }

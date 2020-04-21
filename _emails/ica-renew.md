@@ -9,6 +9,7 @@ images:
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/ica-renew.jpg"
 tags:
   - automation
+  - membership
 permalink: /emails/ica-renew/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

@@ -8,7 +8,8 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/kennedycenter-membership.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/kennedycenter-membership.jpg"
 tags:
-  - events
+  - event
+  - membership
 permalink: /emails/kennedycenter-membership/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

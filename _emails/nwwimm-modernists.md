@@ -9,6 +9,7 @@ images:
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/nwwimm-modernists.jpg"
 tags:
   - newsletter
+  - membership
 permalink: /emails/nwwimm-modernists/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
