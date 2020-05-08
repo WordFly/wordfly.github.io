@@ -230,6 +230,13 @@ window.gallery = (() => {
                         <span class="offscreen">Download</span>
                       </a>
                     </li>
+                    ${model.archiveurl ?
+                    `<li>
+                      <a data-hint="View live email" href="${model.archiveurl}" target="_blank">
+                        <i class="icon external"></i>
+                        <span class="offscreen">Archive URL</span>
+                      </a>
+                    </li>` : ''}
                   </ul>
                 </nav>
               </section>

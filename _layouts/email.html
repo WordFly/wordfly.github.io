@@ -52,6 +52,14 @@ layout: default
                     <span class="offscreen">Download</span>
                   </a>
                 </li>
+                {% if page.archiveurl %}
+                <li>
+                  <a data-hint="View live email" href="{{ page.archiveurl }}" target="_blank">
+                    <i class="icon external"></i>
+                    <span class="offscreen">Archive URL</span>
+                  </a>
+                </li>
+                {% endif %}
               </ul>
             </nav>
           </section>
