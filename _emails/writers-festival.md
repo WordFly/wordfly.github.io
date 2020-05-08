@@ -1,5 +1,5 @@
 ---
-credit: "Sydney Writers' Festival"
+credit: "Sydney Writers’ Festival"
 title: "A literary care package featuring book recommendations, podcasts and more"
 date: 2020-05-05T00:00:00-0800
 dateadded: 2020-05-05

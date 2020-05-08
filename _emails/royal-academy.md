@@ -1,6 +1,6 @@
 ---
 credit: "Royal Academy"
-title: "We're virtually open"
+title: "We’re virtually open"
 date: 2020-05-05T00:00:00-0800
 dateadded: 2020-05-05
 images:

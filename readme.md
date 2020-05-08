@@ -24,6 +24,11 @@ CSS is generated using [SASS](https://sass-lang.com/), an open source CSS prepro
 
 JavaScript is processed through [Babel](https://babeljs.io/) to convert modern ECMAScript code to a more broadly supported syntax.
 
+Release notes
+-------------
+
+5/8/2020 - Added a temporary exhibition space. Commit ae1a06. Added option to link to archive URL. Commit 215cea.
+
 
 Adding emails
 --------------
