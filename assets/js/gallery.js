@@ -1,7 +1,7 @@
 ---
 ---
 
-window.home = (() => {
+window.gallery = (() => {
   let instance; // instance stores a reference to the Singleton
 
   // set random background class on body element
@@ -40,7 +40,8 @@ window.home = (() => {
   class EmailDetails {
     constructor(collection) {
       const updateState = this.updateState.bind(this),
-        elPageWrapper = this.elPageWrapper = document.getElementById('gallery');
+        elPageWrapper = this.elPageWrapper = document.getElementById('gallery'),
+        pathname = window.location.pathname;
       this.state = {
         get value() {
           return window.location.pathname.replace(/^\/emails\//, '');
@@ -50,7 +51,7 @@ window.home = (() => {
             window.history.pushState('', document.title, `/emails${value}`);
           } else {
             // remove state
-            window.history.pushState('', document.title, '/');
+            window.history.pushState('', document.title, pathname);
           }
           updateState();
         }
@@ -163,7 +164,7 @@ window.home = (() => {
       let tagMarkup = '';
       elContainer.id = `${model.slug}-details`;
       elContainer.classList.add('email-details');
-      model.tags.forEach(t => tagMarkup += `<li>${t}</li>\n`);
+      model.tags.forEach(t => tagMarkup += `<li>${t.replace('-', ' ')}</li>\n`);
       // build out container's contents
       elContainer.innerHTML = `
         <div class="inner">
@@ -251,7 +252,7 @@ window.home = (() => {
         elPageWrapper = this.elPageWrapper,
         elEmailsList = elPageWrapper.querySelector('.emails');
       this.model = null;
-      if(id && id !== '/') {
+      if(id && id !== window.location.pathname) {
         if(!elPageWrapper.classList.contains('hide-grid')) {
           elPageWrapper.classList.add('hide-grid');
           elEmailsList.addEventListener('transitionend', this.onShowTransitionend.bind(this, id), { once: true });
@@ -282,7 +283,8 @@ window.home = (() => {
   function initialize(data) {
     const emailDetails = new EmailDetails(data),
       masonryGrid = new MasonryGrid(),
-      elSearch = document.getElementById('search');
+      elSearch = document.getElementById('search'),
+      elFilterNavigation = document.querySelector('#gallery .filter ul');
 
     let searchTimeout;
 
@@ -391,11 +393,13 @@ window.home = (() => {
     }
 
     // hide / show filters
-    document.querySelector('#gallery .filter ul').addEventListener('click', onNavigationClick);
+    if(elFilterNavigation) elFilterNavigation.addEventListener('click', onNavigationClick);
 
     // search input events
-    elSearch.addEventListener('input', onSearchInput);
-    elSearch.addEventListener('keydown', onSearchKeydown);
+    if(elSearch) {
+      elSearch.addEventListener('input', onSearchInput);
+      elSearch.addEventListener('keydown', onSearchKeydown);
+    }
 
     Array.from(document.querySelectorAll('#gallery .filter button')).forEach(el => {
       // apply filter to email grid
