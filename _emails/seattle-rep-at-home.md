@@ -10,6 +10,7 @@ images:
 tags:
   - at-home
 permalink: /emails/seattle-rep-at-home/
+archiveurl: https://wfly.co/g8Q6B
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
 

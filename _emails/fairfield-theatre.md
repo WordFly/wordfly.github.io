@@ -10,6 +10,7 @@ images:
 tags:
   - at-home
 permalink: /emails/fairfield-theatre/
+archiveurl: https://wfly.co/w8TNh
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
 
