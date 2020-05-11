@@ -1,13 +1,14 @@
 ---
 credit: "The Tech"
 title: "ICYMI: 10-day design challenge rolling full speed ahead"
-date: 2020-04-20T00:00:00-0800
-dateadded: 2020-04-20
+date: 2020-05-04T00:00:00-0800
+dateadded: 2020-05-04
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/the-tech.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/the-tech.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/the-tech.jpg"
 tags:
+  - at home
   - newsletter
 permalink: /emails/the-tech/
 ---
