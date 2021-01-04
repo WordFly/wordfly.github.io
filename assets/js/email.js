@@ -43,7 +43,7 @@ window.email = (() => {
   }
 
   return {
-    // get the Singleton instance if one exists or create one if it doesn't
+    // get the Singleton instance if one exists or create one if one doesn't
     getInstance() {
       if(!instance) instance = initialize();
       return instance;
