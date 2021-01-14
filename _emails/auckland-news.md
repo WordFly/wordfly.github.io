@@ -1,8 +1,8 @@
 ---
 credit: "Auckland Museum"
 title: "Your new Museum is ready to meet you."
-date: 2021-01-14T00:00:00-0800
-dateadded: 2021-01-14
+date: 2020-12-01T00:00:00-0800
+dateadded: 2021-01-13
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/auckland-news.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/auckland-news.jpg"

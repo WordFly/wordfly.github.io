@@ -1,8 +1,8 @@
 ---
 credit: "Walker Art Center"
 title: "Member Appreciation Days! Discounts, Giveaways, and Events"
-date: 2021-01-14T00:00:00-0800
-dateadded: 2021-01-13
+date: 2020-12-01T00:00:00-0800
+dateadded: 2021-01-12
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/walker.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/walker.jpg"
