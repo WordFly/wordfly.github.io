@@ -212,6 +212,24 @@ body {
         }
       }
     }
+    fieldset {
+      border: none;
+      white-space: nowrap;
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+      input {
+        border-radius: 0;
+        border: 1px solid #000000;
+        padding: 8px;
+        &[type=submit] {
+          background-color: #000000;
+          color: #ffffff;
+          font-weight: bold;
+        }
+      }
+    }
   }
   #back-to-top {
     background-color: #ffffff;
