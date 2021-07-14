@@ -254,6 +254,7 @@ body {
       input {
         border-radius: 0;
         border: 1px solid #000000;
+        font-family: $base-font-family;
         padding: 8px;
         &[type=email] {
           width: 200px;
