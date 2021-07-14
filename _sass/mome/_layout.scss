@@ -19,6 +19,16 @@ body {
       background-image: url(images/backgrounds/background-1.svg);
       background-position: left -30vw;
       background-size: 60%;
+      form {
+        button {
+          &:not(.active) {
+            &:hover {
+              background-color: #82d1e1;
+              color: #ffffff;
+            }
+          }
+        }
+      }
     }
     ul {
       &.tags {
@@ -51,6 +61,16 @@ body {
       background-image: url(images/backgrounds/background-2.svg);
       background-position: left bottom;
       background-size: 70%;
+      form {
+        button {
+          &:not(.active) {
+            &:hover {
+              background-color: #416cb4;
+              color: #ffffff;
+            }
+          }
+        }
+      }
     }
     ul {
       &.tags {
@@ -83,6 +103,16 @@ body {
       background-image: url(images/backgrounds/background-3.svg);
       background-position: -27vw -4vw;
       background-size: 130%;
+      form {
+        button {
+          &:not(.active) {
+            &:hover {
+              background-color: #eb3794;
+              color: #ffffff;
+            }
+          }
+        }
+      }
     }
     ul {
       &.tags {
@@ -212,8 +242,7 @@ body {
         }
       }
     }
-    fieldset {
-      border: none;
+    form {
       white-space: nowrap;
       label {
         display: block;
@@ -226,10 +255,14 @@ body {
         &[type=email] {
           width: 200px;
         }
-        &[type=submit] {
-          background-color: #000000;
+      }
+      button {
+        background-color: #000000;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 8px;
+        &:hover {
           color: #ffffff;
-          font-weight: bold;
         }
       }
     }
