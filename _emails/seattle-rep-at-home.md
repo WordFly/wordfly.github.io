@@ -9,6 +9,7 @@ images:
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/seattle-rep-at-home.jpg"
 tags:
   - at-home
+  - newsletter
 permalink: /emails/seattle-rep-at-home/
 archiveurl: https://wfly.co/g8Q6B
 ---

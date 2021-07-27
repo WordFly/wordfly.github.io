@@ -9,6 +9,7 @@ images:
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/pnb-at-home.jpg"
 tags:
   - at-home
+  - newsletter
 permalink: /emails/pnb-at-home/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

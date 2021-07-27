@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/finnish-national-opera.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/finnish-national-opera.jpg"
 tags:
-  - events
+  - event
 permalink: /emails/finnish-national-opera/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

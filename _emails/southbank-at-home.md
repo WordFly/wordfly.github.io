@@ -9,6 +9,7 @@ images:
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/southbank-at-home.jpg"
 tags:
   - at-home
+  - membership
 permalink: /emails/southbank-at-home/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

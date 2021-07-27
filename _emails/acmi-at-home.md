@@ -9,6 +9,7 @@ images:
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/acmi-at-home.jpg"
 tags:
   - at-home
+  - event
 permalink: /emails/acmi-at-home/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

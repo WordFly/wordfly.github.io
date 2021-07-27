@@ -9,6 +9,7 @@ images:
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/crystal-bridges.jpg"
 tags:
   - at-home
+  - event
 permalink: /emails/crystal-bridges/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
