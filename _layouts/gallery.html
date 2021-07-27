@@ -4,31 +4,16 @@ layout: default
 <section data-count="{{ site.emails.size }}" id="gallery">
   {% if page.layout == 'home' %}
   {%- include filters.html -%}
-  {% elsif page.layout == 'exhibition' %}
-  {%- include exhibition-header.html -%}
   {% endif %}
   {% if site.emails.size > 0 %}
   <ol class="emails">
     {% assign sorted = site.emails | sort: 'dateadded' | reverse %}
     {% for email in sorted %}
-    {% if page.layout == 'home' %}
-    {% unless email.tags contains 'at-home' %}
     <li class="fade" id="{{ email.slug }}" data-tags="{{ email.tags | join: " " }}">
       <a href="{{ email.url | relative_url }}">
         <img alt="{{ email.title }}" src="{{ email.images.grid }}" />
       </a>
     </li>
-    {% endunless %}
-    {% endif %}
-    {% unless page.layout == 'home' %}
-    {% if email.tags contains 'at-home' %}
-    <li class="fade" id="{{ email.slug }}" data-tags="{{ email.tags | join: " " }}">
-      <a href="{{ email.url | relative_url }}">
-        <img alt="{{ email.title }}" src="{{ email.images.grid }}" />
-      </a>
-    </li>
-    {% endif %}
-    {% endunless %}
     {% endfor %}
   </ol>
   {% endif %}
@@ -46,14 +31,6 @@ layout: default
     // add unsupported message
     elWrapper.appendChild(elMessageContainer);
   } else {
-    var isHomePage = '{{page.layout}}' === 'home';
-      emails = JSON.parse(decodeURIComponent("{{ site.emails | sort: 'dateadded' | reverse | jsonify | uri_escape }}"))
-        .filter(function(email) {
-          // filter exhibition emails ('at-home') from homepage gallery
-          return isHomePage && email.tags.indexOf('at-home') < 0 ||
-            // fliter non-exhibition emails ('at-home') from exhibition gallery
-            !isHomePage && email.tags.indexOf('at-home') >= 0;
-        });
-    window.gallery.getInstance(emails);
+    window.gallery.getInstance(JSON.parse(decodeURIComponent("{{ site.emails | sort: 'dateadded' | reverse | jsonify | uri_escape }}")));
   }
 </script>

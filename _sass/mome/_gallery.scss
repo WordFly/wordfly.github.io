@@ -20,47 +20,6 @@
       }
     }
   }
-  .cta-intermission-at-home {
-    background-image: url(images/cta-intermission-at-home.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 67px;
-    left: 0;
-    position: absolute;
-    text-indent: -999999px;
-    top: -105px;
-    width: 225px;
-    z-index: 3;
-  }
-  header {
-    &.exhibition {
-      align-items: center;
-      display: flex;
-      height: 61px;
-      justify-content: center;
-      margin-bottom: 50px;
-      a {
-        &.back-home {
-          background-image: url(images/cta-back-home.png);
-          background-repeat: no-repeat;
-          background-size: contain;
-          display: block;
-          height: 23px;
-          margin-right: 35px;
-          text-indent: -999999px;
-          width: 26px;
-        }
-      }
-      h2 {
-        background-image: url(images/header-intermission-at-home.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 26px;
-        text-indent: -999999px;
-        width: 560px;
-      }
-    }
-  }
   .filter {
     margin-bottom: 50px;
     text-align: center;
@@ -362,25 +321,11 @@
 
 @include media-query($large) {
   #gallery {
-    .cta-intermission-at-home {
-      background-image: url(images/cta-intermission-at-home-small.png);
-      display: block;
-      height: 35px;
-      margin: -20px auto 20px;
-      position: relative;
-      top: 0;
-      width: 285px;
-    }
   }
 }
 
 @include media-query($medium) {
   #gallery {
-    header {
-      &.exhibition {
-        margin: 0 40px 50px;
-      }
-    }
     .filter {
       text-align: center;
       ul {
@@ -394,15 +339,6 @@
 
 @include media-query($small) {
   #gallery {
-    header {
-      &.exhibition {
-        a {
-          &.back-home {
-            margin-right: 20px;
-          }
-        }
-      }
-    }
     .filter {
       margin-bottom: 50px;
       ul {
