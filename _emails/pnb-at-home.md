@@ -8,7 +8,6 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/pnb-at-home.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/pnb-at-home.jpg"
 tags:
-  - at-home
   - newsletter
 permalink: /emails/pnb-at-home/
 ---

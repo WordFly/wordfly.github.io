@@ -8,7 +8,6 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/lyric-opera-kc.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/lyric-opera-kc.jpg"
 tags:
-  - at-home
   - membership
 permalink: /emails/lyric-opera-kc/
 ---

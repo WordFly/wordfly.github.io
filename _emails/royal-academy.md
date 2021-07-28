@@ -8,7 +8,6 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/royal-academy.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/royal-academy.jpg"
 tags:
-  - at-home
   - newsletter
 permalink: /emails/royal-academy/
 ---

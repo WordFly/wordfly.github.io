@@ -8,7 +8,6 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/southbank-at-home.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/southbank-at-home.jpg"
 tags:
-  - at-home
   - membership
 permalink: /emails/southbank-at-home/
 ---

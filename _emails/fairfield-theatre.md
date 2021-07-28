@@ -8,7 +8,6 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/fairfield-theatre.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/fairfield-theatre.jpg"
 tags:
-  - at-home
   - membership
 permalink: /emails/fairfield-theatre/
 archiveurl: https://wfly.co/w8TNh

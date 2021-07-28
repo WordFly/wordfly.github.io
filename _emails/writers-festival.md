@@ -8,7 +8,6 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/writers-festival.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/writers-festival.jpg"
 tags:
-  - at-home
   - newsletter
 permalink: /emails/writers-festival/
 ---

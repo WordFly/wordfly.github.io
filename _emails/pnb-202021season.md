@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/pnb-202021season.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/pnb-202021season.jpg"
 tags:
-  - events
+  - event
 permalink: /emails/pnb-202021season/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

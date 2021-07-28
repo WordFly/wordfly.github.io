@@ -8,7 +8,6 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/seattle-opera.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/seattle-opera.jpg"
 tags:
-  - at-home
   - event
 permalink: /emails/seattle-opera/
 ---

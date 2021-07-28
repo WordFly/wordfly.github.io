@@ -8,7 +8,6 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/fisher-center.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/fisher-center.jpg"
 tags:
-  - at-home
   - event
 permalink: /emails/fisher-center/
 ---

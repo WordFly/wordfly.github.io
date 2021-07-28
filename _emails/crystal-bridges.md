@@ -8,7 +8,6 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/crystal-bridges.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/crystal-bridges.jpg"
 tags:
-  - at-home
   - event
 permalink: /emails/crystal-bridges/
 ---

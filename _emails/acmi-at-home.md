@@ -8,7 +8,6 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/acmi-at-home.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/acmi-at-home.jpg"
 tags:
-  - at-home
   - event
 permalink: /emails/acmi-at-home/
 ---
