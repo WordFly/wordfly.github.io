@@ -10,7 +10,6 @@ images:
 tags:
   - event
 permalink: /emails/jazz-at-lincoln-center/
-archiveurl: https://wfly.co/Fa7d9
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
 

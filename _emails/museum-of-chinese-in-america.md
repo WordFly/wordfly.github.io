@@ -10,7 +10,6 @@ images:
 tags:
   - event
 permalink: /emails/museum-of-chinese-in-america/
-archiveurl: https://wfly.co/Vw9y4
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
 

@@ -10,7 +10,6 @@ images:
 tags:
   - event
 permalink: /emails/public-theater-event/
-archiveurl: https://wfly.co/p8KUt
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
 

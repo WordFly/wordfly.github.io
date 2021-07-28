@@ -10,7 +10,6 @@ images:
 tags:
   - newsletter
 permalink: /emails/nelson-atkins-museum-of-art/
-archiveurl: https://wfly.co/j4R5I
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
 

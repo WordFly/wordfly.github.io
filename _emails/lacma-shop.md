@@ -10,7 +10,6 @@ images:
 tags:
   - shop
 permalink: /emails/lacma-shop/
-archiveurl: https://wfly.co/r5YZv
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
 

@@ -10,7 +10,6 @@ images:
 tags:
   - event
 permalink: /emails/colburn-school/
-archiveurl: https://wfly.co/z4MWq
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
 

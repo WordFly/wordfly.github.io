@@ -10,7 +10,6 @@ images:
 tags:
   - event
 permalink: /emails/minnesota-orchestra/
-archiveurl: https://wfly.co/w0V4K
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
 
