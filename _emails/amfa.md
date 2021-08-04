@@ -9,7 +9,7 @@ images:
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/amfa.jpg"
 tags:
   - membership
-permalink: /emails/arkansas-museum-of-fine-arts/
+permalink: /emails/amfa/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
 
