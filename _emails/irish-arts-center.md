@@ -1,0 +1,17 @@
+---
+credit: "Irish Arts Center"
+title: "Pillow Queens in Residence | Sep 13–17"
+date: 2022-08-04T00:00:00-0800
+dateadded: 2022-08-23
+images:
+  desktop: "https://media.wordfly.com/wordfly/mome/desktop/irish-arts-center.jpg"
+  grid: "https://media.wordfly.com/wordfly/mome/grid/irish-arts-center.jpg"
+  mobile: "https://media.wordfly.com/wordfly/mome/mobile/irish-arts-center.jpg"
+tags:
+  - event
+permalink: /emails/irish-arts-center/
+---
+We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
+
+![{{ page.title }} – desktop view]({{ page.images.desktop }})
+![{{ page.title }} – mobile view]({{ page.images.mobile }})
