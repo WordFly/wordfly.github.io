@@ -2,7 +2,7 @@
 credit: "Geffen Playhouse"
 title: "You’re invited to \“The Inheritance\” Opening Weekend"
 date: 2022-08-23T00:00:00-0800
-dateadded: 2023-08-30
+dateadded: 2022-08-30
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/geffen-playhouse-invite.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/geffen-playhouse-invite.jpg"

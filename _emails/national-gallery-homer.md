@@ -2,7 +2,7 @@
 credit: "The National Gallery"
 title: "Who was Winslow Homer?"
 date: 2022-08-12T00:00:00-0800
-dateadded: 2023-09-01
+dateadded: 2022-09-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/national-gallery-homer.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/national-gallery-homer.jpg"
