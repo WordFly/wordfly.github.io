@@ -1,6 +1,6 @@
 ---
 credit: "Geffen Playhouse"
-title: "You’re invited to \“The Inheritance\” Opening Weekend"
+title: "You’re invited to The Inheritance Opening Weekend"
 date: 2022-08-23T00:00:00-0800
 dateadded: 2022-08-30
 images:
