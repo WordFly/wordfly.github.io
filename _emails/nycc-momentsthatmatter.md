@@ -10,6 +10,7 @@ images:
 tags:
   - automation
 permalink: /emails/nycc-momentsthatmatter/
+archiveurl: https://wfly.co/s4CVh
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
 
