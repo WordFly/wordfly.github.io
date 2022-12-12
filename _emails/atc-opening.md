@@ -1,8 +1,8 @@
 ---
 credit: "Auckland Theatre Company"
 title: "Oscar Kightley's Dawn Raids returns to the stage in August!"
-date: 2022-06-08T00:00:00-0800
-dateadded: 2023-08-23
+date: 2022-09-08T00:00:00-0800
+dateadded: 2022-09-08
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/atc-opening.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/atc-opening.jpg"
