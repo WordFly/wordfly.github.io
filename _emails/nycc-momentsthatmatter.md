@@ -1,8 +1,8 @@
 ---
 credit: "New York City Center"
 title: "VIDEO: My Tribute to New York City Center"
-date: 2022-11-01T00:00:00-0800
-dateadded: 2022-11-01
+date: 2022-10-01T00:00:00-0800
+dateadded: 2022-10-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/nycc-momentsthatmatter.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/nycc-momentsthatmatter.jpg"
