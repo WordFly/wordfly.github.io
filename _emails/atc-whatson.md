@@ -2,7 +2,7 @@
 credit: "ASB Waterfront Theatre"
 title: "What's On at ASB Waterfront Theatre"
 date: 2022-09-08T00:00:00-0800
-dateadded: 2023-09-08
+dateadded: 2022-09-08
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/atc-whatson.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/atc-whatson.jpg"
