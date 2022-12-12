@@ -1,8 +1,8 @@
 ---
 credit: "The Wheeler Centre"
 title: "Join us for our final events of the year"
-date: 2022-11-01T00:00:00-0800
-dateadded: 2022-11-01
+date: 2022-09-01T00:00:00-0800
+dateadded: 2022-09-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/wheelercentre-whatson.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/wheelercentre-whatson.jpg"

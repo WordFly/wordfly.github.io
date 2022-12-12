@@ -1,8 +1,8 @@
 ---
 credit: "The Wheeler Centre"
 title: "🌼 SPRING FLING 🌼 JUST ANNOUNCED!"
-date: 2022-09-01T00:00:00-0800
-dateadded: 2022-09-01
+date: 2022-11-01T00:00:00-0800
+dateadded: 2022-11-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/wheelercentre-springfling.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/wheelercentre-springfling.jpg"
