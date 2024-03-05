@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/sadlerswells-spring.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/sadlerswells-spring.jpg"
 tags:
-  - shop
+  - newsletter
 permalink: /emails/sadlerswells-spring/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
