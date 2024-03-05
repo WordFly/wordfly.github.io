@@ -1,8 +1,8 @@
 ---
 credit: "Welsh National Opera"
 title: "Our new season is on sale today"
-date: 2024-03-03T00:00:00-0800
-dateadded: 2024-03-03
+date: 2024-02-03T00:00:00-0800
+dateadded: 2024-02-03
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/wno-cymru.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/wno-cymru.jpg"

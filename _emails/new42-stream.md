@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/new42-stream.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/new42-stream.jpg"
 tags:
-  - events
+  - event
 permalink: /emails/new42-stream/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
