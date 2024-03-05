@@ -1,8 +1,8 @@
 ---
 credit: "Arkansas Museum of Fine Arts"
 title: "New Native Art Exhibition Opens This Week"
-date: 2024-03-04T00:00:00-0800
-dateadded: 2024-03-04
+date: 2024-03-05T00:00:00-0800
+dateadded: 2024-03-05
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/amfa-abstraction.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/amfa-abstraction.jpg"
