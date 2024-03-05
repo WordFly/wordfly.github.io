@@ -1,8 +1,8 @@
 ---
 credit: "We The Curious"
 title: "Let's hibernate 🛌"
-date: 2024-03-04T00:00:00-0800
-dateadded: 2024-03-04
+date: 2023-12-21T00:00:00-0800
+dateadded: 2023-12-21
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/wethecurious-members.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/wethecurious-members.jpg"
