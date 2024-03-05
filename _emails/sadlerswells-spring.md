@@ -10,6 +10,7 @@ images:
 tags:
   - newsletter
 permalink: /emails/sadlerswells-spring/
+archiveurl: https://wfly.co/Mx7m4
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
 
