@@ -9,7 +9,7 @@ images:
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/newvictory-musica.jpg"
 tags:
   - event
-permalink: /emails/newvictory-musica/
+permalink: /emails/new42-musica/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
 
