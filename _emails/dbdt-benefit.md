@@ -1,8 +1,8 @@
 ---
 credit: "Dallas Black Dance Theatre"
 title: "On Sale Now! Get Down to the Motown Sound at The BIG Dance 2024 🎶"
-date: 2024-05-04T00:00:00-0800
-dateadded: 2024-05-04
+date: 2024-06-01T00:00:00-0800
+dateadded: 2024-06-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/dbdt-benefit.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/dbdt-benefit.jpg"

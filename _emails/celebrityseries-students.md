@@ -1,8 +1,8 @@
 ---
 credit: "Celebrity Series"
 title: "Student Offers This Week: Patti LuPone, Vertigo Dance Company, and more!!"
-date: 2024-04-04T00:00:00-0800
-dateadded: 2024-04-04
+date: 2024-05-04T00:00:00-0800
+dateadded: 2024-05-04
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/celebrityseries-students.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/celebrityseries-students.jpg"
