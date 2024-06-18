@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/roundabout-presale.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/roundabout-presale.jpg"
 tags:
-  - events
+  - event
 permalink: /emails/roundabout-presale/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
