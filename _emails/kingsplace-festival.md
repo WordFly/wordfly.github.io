@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/kingsplace-festival.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/kingsplace-festival.jpg"
 tags:
-  - event
+  - newsletter
 permalink: /emails/kingsplace-festival/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

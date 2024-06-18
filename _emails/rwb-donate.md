@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/rwb-donate.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/rwb-donate.jpg"
 tags:
-  - event
+  - automation
 permalink: /emails/rwb-donate/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
