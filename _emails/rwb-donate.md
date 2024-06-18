@@ -1,8 +1,8 @@
 ---
 credit: "Royal Winnipeg Ballet"
 title: "Support the Future of the RWB Today!"
-date: 2024-06-04T00:00:00-0800
-dateadded: 2024-06-04
+date: 2024-04-04T00:00:00-0800
+dateadded: 2024-04-04
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/rwb-donate.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/rwb-donate.jpg"
