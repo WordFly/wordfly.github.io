@@ -1,5 +1,5 @@
 ---
-credit: "Canada's Royal Winnipeg Ballet"
+credit: "Royal Winnipeg Ballet"
 title: "Save the date! RWB School recreational classes registration!"
 date: 2024-06-04T00:00:00-0800
 dateadded: 2024-06-04
