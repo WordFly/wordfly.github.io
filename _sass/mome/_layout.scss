@@ -194,10 +194,13 @@ body {
     }
     nav {
       display: inline-block;
-      margin: 55px 0 50px;
+      margin: 55px 0 0;
       max-width: 130px;
       width: 100%;
       ul {
+        &:not(:empty){
+          margin-bottom: 50px;
+        }
         display: grid;
         grid-template-columns: 50% 50%;
         justify-content: space-evenly;
