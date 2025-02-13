@@ -219,12 +219,6 @@ window.gallery = (() => {
                 <nav class="share">
                   <ul>
                     <li>
-                      <a data-hint="Share on Twitter" href="https://twitter.com/intent/tweet?hashtags=emailmarketing%2C%20mome&original_referer=${encodedHref}&ref_src=twsrc%5Etfw&text=${encodeURIComponent(model.title)}&tw_p=tweetbutton&url=${encodedHref}&via=emailmuseum" target="_blank">
-                        <i class="icon twitter"></i>
-                        <span class="offscreen">Tweet</span>
-                      </a>
-                    </li>
-                    <li>
                       <a data-hint="Download image" download href="${model.images.desktop}" target="_blank">
                         <i class="icon download"></i>
                         <span class="offscreen">Download</span>

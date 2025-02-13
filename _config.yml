@@ -5,8 +5,8 @@ description: "The Museum of Modern Email is dedicated to advancing the email art
 baseurl: ""
 url: "https://museumofmodernemail.com"
 # facebook_username: emailmuseum
-instagram_username: emailmuseum
-twitter_username: emailmuseum
+# instagram_username: emailmuseum
+# twitter_username: emailmuseum
 markdown: kramdown
 plugins:
   - jekyll-babel
