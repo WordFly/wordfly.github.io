@@ -313,6 +313,9 @@ body {
       &:before {
         display: none;
       }
+      nav {
+        margin: 0;
+      }
       .inner {
         flex-direction: column;
         padding: 40px 0 0;
