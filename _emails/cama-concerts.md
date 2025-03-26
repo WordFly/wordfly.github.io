@@ -9,6 +9,7 @@ images:
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/cama-concerts.jpg"
 tags:
   - event
+  - seasons
 permalink: /emails/cama-concerts/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

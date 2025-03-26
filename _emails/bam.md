@@ -9,6 +9,7 @@ images:
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/bam.jpg"
 tags:
   - newsletter
+  - seasons
 permalink: /emails/bam/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

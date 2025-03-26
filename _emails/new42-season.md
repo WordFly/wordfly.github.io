@@ -9,6 +9,7 @@ images:
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/new42-season.jpg"
 tags:
   - event
+  - seasons
 permalink: /emails/new42-season/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
