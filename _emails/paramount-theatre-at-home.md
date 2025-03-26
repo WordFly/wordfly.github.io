@@ -8,6 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/paramount-theatre-at-home.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/paramount-theatre-at-home.jpg"
 tags:
+  - giving
   - newsletter
 permalink: /emails/paramount-theatre-at-home/
 ---

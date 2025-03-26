@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/dallas-zoo-reengage.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/dallas-zoo-reengage.jpg"
 tags:
-  - reengagement
+  - engagement
 permalink: /emails/dallas-zoo-reengage/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

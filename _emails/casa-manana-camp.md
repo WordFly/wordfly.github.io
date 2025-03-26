@@ -8,6 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/casa-manana-camp.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/casa-manana-camp.jpg"
 tags:
+  - education
   - event
 permalink: /emails/casa-manana-camp/
 ---

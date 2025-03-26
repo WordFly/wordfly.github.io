@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/cam-reengage.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/cam-reengage.jpg"
 tags:
-  - reengagement
+  - engagement
 permalink: /emails/cam-reengage/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

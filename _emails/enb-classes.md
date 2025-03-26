@@ -8,6 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/enb-classes.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/enb-classes.jpg"
 tags:
+  - education
   - newsletter
 permalink: /emails/enb-classes/
 ---

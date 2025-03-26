@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/omahapa-reengage.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/omahapa-reengage.jpg"
 tags:
-  - reengagement
+  - engagement
 permalink: /emails/omahapa-reengage/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

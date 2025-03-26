@@ -9,6 +9,7 @@ images:
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/nycc-momentsthatmatter.jpg"
 tags:
   - automation
+  - giving
 permalink: /emails/nycc-momentsthatmatter/
 archiveurl: https://wfly.co/s4CVh
 ---

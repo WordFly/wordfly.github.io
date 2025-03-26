@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/royal-albert-hall-reengage.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/royal-albert-hall-reengage.jpg"
 tags:
-  - reengagement
+  - engagement
 permalink: /emails/royal-albert-hall-reengage/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

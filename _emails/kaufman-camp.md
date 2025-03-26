@@ -8,6 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/kaufman-camp.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/kaufman-camp.jpg"
 tags:
+  - education
   - event
 permalink: /emails/kaufman-camp/
 ---

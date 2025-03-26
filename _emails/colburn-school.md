@@ -8,6 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/colburn-school.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/colburn-school.jpg"
 tags:
+  - education
   - event
 permalink: /emails/colburn-school/
 ---

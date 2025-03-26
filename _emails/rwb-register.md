@@ -8,6 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/rwb-register.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/rwb-register.jpg"
 tags:
+  - education
   - event
 permalink: /emails/rwb-register/
 ---

@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/monterey-bay-aquarium-reengage.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/monterey-bay-aquarium-reengage.jpg"
 tags:
-  - reengagement
+  - engagement
 permalink: /emails/monterey-bay-aquarium-reengage/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

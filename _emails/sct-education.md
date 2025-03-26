@@ -8,6 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/sct-education.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/sct-education.jpg"
 tags:
+  - education
   - newsletter
 permalink: /emails/sct-education/
 ---

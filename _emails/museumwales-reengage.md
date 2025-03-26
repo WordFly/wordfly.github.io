@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/museumwales-reeengage.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/museumwales-reeengage.jpg"
 tags:
-  - reengagement
+  - engagement
 permalink: /emails/museumwales-reeengage/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
