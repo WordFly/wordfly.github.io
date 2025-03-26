@@ -8,7 +8,6 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/rwb-donate.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/rwb-donate.jpg"
 tags:
-  - automation
   - giving
 permalink: /emails/rwb-donate/
 ---

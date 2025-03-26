@@ -8,7 +8,6 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/bam.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/bam.jpg"
 tags:
-  - newsletter
   - seasons
 permalink: /emails/bam/
 ---

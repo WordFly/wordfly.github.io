@@ -8,7 +8,6 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/new42-season.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/new42-season.jpg"
 tags:
-  - event
   - seasons
 permalink: /emails/new42-season/
 ---

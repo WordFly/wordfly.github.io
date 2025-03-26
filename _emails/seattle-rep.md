@@ -8,7 +8,6 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/seattle-rep.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/seattle-rep.jpg"
 tags:
-  - event
   - seasons
 permalink: /emails/seattle-rep/
 ---

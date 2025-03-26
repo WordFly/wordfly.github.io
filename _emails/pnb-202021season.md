@@ -8,7 +8,6 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/pnb-202021season.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/pnb-202021season.jpg"
 tags:
-  - event
   - seasons
 permalink: /emails/pnb-202021season/
 ---

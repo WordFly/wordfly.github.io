@@ -8,7 +8,6 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/cama-concerts.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/cama-concerts.jpg"
 tags:
-  - event
   - seasons
 permalink: /emails/cama-concerts/
 ---

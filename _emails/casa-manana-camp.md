@@ -9,7 +9,6 @@ images:
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/casa-manana-camp.jpg"
 tags:
   - education
-  - event
 permalink: /emails/casa-manana-camp/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

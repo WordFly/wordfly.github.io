@@ -9,7 +9,6 @@ images:
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/paramount-theatre-at-home.jpg"
 tags:
   - giving
-  - newsletter
 permalink: /emails/paramount-theatre-at-home/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

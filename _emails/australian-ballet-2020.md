@@ -8,7 +8,6 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/australian-ballet-2020.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/australian-ballet-2020.jpg"
 tags:
-  - event
   - seasons
 permalink: /emails/australian-ballet-2020/
 ---
