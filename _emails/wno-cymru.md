@@ -8,7 +8,6 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/wno-cymru.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/wno-cymru.jpg"
 tags:
-  - event
   - seasons
 permalink: /emails/wno-cymru/
 ---
