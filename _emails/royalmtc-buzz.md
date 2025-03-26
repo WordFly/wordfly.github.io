@@ -1,8 +1,8 @@
 ---
 credit: "Royal Manitoba Theatre Centre"
 title: "Backstage Buzz: 'King James' scores with audiences, 'Casey and Diana' next!"
-date: 2025-03-00T00:00:00-0800
-dateadded: 2025-03-00
+date: 2025-03-01T00:00:00-0800
+dateadded: 2025-03-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/royalmtc-buzz.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/royalmtc-buzz.jpg"
