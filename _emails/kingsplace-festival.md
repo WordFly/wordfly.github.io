@@ -1,5 +1,5 @@
 ---
-credit: "Dallas Black Dance Theatre"
+credit: "Kings Place"
 title: "New Events and June Highlights"
 date: 2024-06-04T00:00:00-0800
 dateadded: 2024-06-04
