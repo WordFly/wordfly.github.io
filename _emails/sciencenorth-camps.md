@@ -1,8 +1,8 @@
 ---
 credit: "Science North"
 title: "New opening date to register for Science North Summer Science Camps"
-date: 2025-03-00T00:00:00-0800
-dateadded: 2025-03-00
+date: 2025-03-25T00:00:00-0800
+dateadded: 2025-03-02
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/sciencenorth-camps.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/sciencenorth-camps.jpg"
