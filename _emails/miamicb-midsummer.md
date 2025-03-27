@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/miamicb-midsummer.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/miamicb-midsummer.jpg"
 tags:
-  - giving
+  - event
 permalink: /emails/miamicb-midsummer/
 archiveurl: https://wfly.co/Nl63I
 ---
