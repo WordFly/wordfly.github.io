@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/paramount-state-films.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/paramount-state-films.jpg"
 tags:
-  - event
+  - seasons
 permalink: /emails/paramount-state-films/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

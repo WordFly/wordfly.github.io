@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/trp-event.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/trp-event.jpg"
 tags:
-  - newsletter
+  - event
 permalink: /emails/trp-event/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

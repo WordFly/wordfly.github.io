@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/act-subscribe.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/act-subscribe.jpg"
 tags:
-  - event
+  - seasons
 permalink: /emails/act-subscribe/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
