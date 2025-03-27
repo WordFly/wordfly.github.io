@@ -10,7 +10,7 @@ images:
 tags:
   - shop
 permalink: /emails/carolinapa-give-gift/
-archiveurl: https://wfly.co/Nl63I
+archiveurl: https://wfly.co/Jh70Y
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
 

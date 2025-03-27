@@ -9,6 +9,7 @@ images:
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/steppenwolf-membership.jpg"
 tags:
   - membership
+  - seasons
 permalink: /emails/steppenwolf-membership/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
