@@ -1,8 +1,8 @@
 ---
 credit: "Auckland Theatre Company"
 title: "🎭Design Your Own subscription! Pick 3 or more plays and save"
-date: 2024-12-31T00:00:00-0800
-dateadded: 2024-12-31
+date: 2025-01-31T00:00:00-0800
+dateadded: 2025-01-31
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/aucklandtc-dyos.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/aucklandtc-dyos.jpg"
