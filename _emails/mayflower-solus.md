@@ -1,8 +1,8 @@
 ---
 credit: "Mayflower Studios"
 title: "Meet the very worst Baddies in the world at Mayflower Studios!"
-date: 2025-02-01T00:00:00-0800
-dateadded: 2025-02-01
+date: 2025-01-01T00:00:00-0800
+dateadded: 2025-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/mayflower-solus.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/mayflower-solus.jpg"

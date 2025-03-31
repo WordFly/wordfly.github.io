@@ -1,8 +1,8 @@
 ---
 credit: "The Glasshouse International Centre for Music"
 title: "Excited for our upcoming taster day?"
-date: 2025-02-01T00:00:00-0800
-dateadded: 2025-02-01
+date: 2025-01-01T00:00:00-0800
+dateadded: 2025-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/glasshouse-classes.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/glasshouse-classes.jpg"

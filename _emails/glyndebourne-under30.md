@@ -1,8 +1,8 @@
 ---
 credit: "Glyndebourne"
 title: "📢 Under 30s tickets for Festival 2025"
-date: 2025-02-01T00:00:00-0800
-dateadded: 2025-02-01
+date: 2025-01-01T00:00:00-0800
+dateadded: 2025-01-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/glyndebourne-under30.jpg"
   grid: "https://media.wordfly.com/wordfly/mome/grid/glyndebourne-under30.jpg"
