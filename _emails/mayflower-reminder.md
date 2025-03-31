@@ -1,5 +1,5 @@
 ---
-credit: "MAST Mayflower"
+credit: "MAST Mayflower Studios"
 title: "Your Meet and Greet information for Rachel Tucker at MAST Mayflower Studios"
 date: 2024-07-01T00:00:00-0800
 dateadded: 2024-07-01

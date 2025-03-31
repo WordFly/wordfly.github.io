@@ -1,7 +1,7 @@
 ---
 credit: "Peace Center"
 title: "JUST ANNOUNCED: Wynonna Judd - The Greatest Hits Tour"
-date: 2025-03-01T00:00:00-0800
+date: 2024-06-01T00:00:00-0800
 dateadded: 2025-03-01
 images:
   desktop: "https://media.wordfly.com/wordfly/mome/desktop/peacecenter-peacekeeper.jpg"
