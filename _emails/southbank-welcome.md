@@ -9,6 +9,7 @@ images:
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/southbank-welcome.jpg"
 tags:
   - automation
+  - custom-code
 permalink: /emails/southbank-welcome/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
