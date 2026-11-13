@@ -2,16 +2,21 @@
 layout: default
 ---
 {% assign sorted = site.emails | sort: 'dateadded' | reverse %}
-<section data-count="{{ site.emails.size }}" id="gallery">
+{% if page.tag %}
+  {% assign shown = sorted | where_exp: "email", "email.tags contains page.tag" %}
+{% else %}
+  {% assign shown = sorted %}
+{% endif %}
+<section data-count="{{ shown.size }}" id="gallery">
   {% if page.layout == 'home' %}
   {%- include filters.html -%}
   {% endif %}
   {% if site.emails.size > 0 %}
   <ol class="emails">
     {% for email in sorted %}
-    <li class="fade" id="{{ email.slug }}" data-tags="{{ email.tags | join: " " }}">
+    <li class="fade{% if page.tag %}{% unless email.tags contains page.tag %} hide{% endunless %}{% endif %}" id="{{ email.slug }}" data-tags="{{ email.tags | join: " " }}">
       <a href="{{ email.url | relative_url }}">
-        <img alt="{{ email.title }}" src="{{ email.images.grid }}" />
+        <img alt="{{ email.title }}" loading="lazy" src="{{ email.images.grid }}" />
       </a>
     </li>
     {% endfor %}

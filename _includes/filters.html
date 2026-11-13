@@ -1,12 +1,12 @@
 <nav class="filter">
   <ul>
     <li>
-      <button class="active" data-tag="all" data-title="{{ site.title | escape }} | {{ site.description | escape }}">All</button>
+      <button{% unless page.tag %} class="active"{% endunless %} data-tag="all" data-title="{{ site.title | escape }} | {{ site.description | escape }}">All</button>
     </li>
     {%- assign categories = site.pages | where_exp: "p", "p.tag" | sort: "order" -%}
     {%- for category in categories %}
     <li>
-      <button data-slug="{{ category.name | remove: '.md' }}" data-tag="{{ category.tag }}" data-title="{{ category.title | escape }} | {{ site.title | escape }}">{{ category.title }}</button>
+      <button{% if page.tag == category.tag %} class="active"{% endif %} data-slug="{{ category.name | remove: '.md' }}" data-tag="{{ category.tag }}" data-title="{{ category.title | escape }} | {{ site.title | escape }}">{{ category.title }}</button>
     </li>
     {%- endfor %}
     <li>

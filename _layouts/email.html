@@ -60,8 +60,8 @@ layout: default
           {% if page.description %}
           <div class="description">{{ page.description }}</div>
           {% endif %}
-          <img alt="{{ page.title }} - desktop view" class="desktop-view active" src="{{ page.images.desktop }}" />
-          <img alt="{{ page.title }} - mobile view" class="mobile-view" src="{{ page.images.mobile }}" />
+          <img alt="{{ page.title }} - desktop view" class="desktop-view active" fetchpriority="high" src="{{ page.images.desktop }}" />
+          <img alt="{{ page.title }} - mobile view" class="mobile-view" fetchpriority="low" src="{{ page.images.mobile }}" />
         </figure>
       </main>
     </div>

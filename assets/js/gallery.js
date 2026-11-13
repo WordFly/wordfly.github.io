@@ -66,7 +66,7 @@ window.gallery = (() => {
       const elDetails = this.elPageWrapper.querySelector('.email-details');
       if(elDetails && elDetails.classList.contains('loaded')) {
         elDetails.classList.remove('loaded');
-        elDetails.addEventListener('transitionend', this.show.bind(this), { once: true });
+        this.afterTransition(elDetails, this.show.bind(this));
       } else {
         this.show();
       }
@@ -114,9 +114,54 @@ window.gallery = (() => {
       const elDetails = this.elPageWrapper.querySelector('.email-details');
       if(elDetails) {
         elDetails.parentNode.removeChild(elDetails);
-        // scroll back to email in the gallery
-        document.getElementById(elDetails.id.replace(/-details$/, '')).scrollIntoView({ behavior: 'smooth', block: 'start' });
+        this.elPageWrapper.classList.add('restore-grid');
+        this.elPageWrapper.classList.remove('hide-grid');
+        this.scrollToItem(document.getElementById(elDetails.id.replace(/-details$/, '')));
       }
+    }
+
+    // scroll to the email while the grid is invisible, then fade the grid in once the tiles on screen have settled
+    scrollToItem(elItem) {
+      const elPageWrapper = this.elPageWrapper,
+        elItems = Array.from(elItem.parentNode.children),
+        // layout position, so the tile's fade-in scale doesn't move the target
+        anchor = () => {
+          let top = 0,
+            el = elItem;
+          if(!elItem.offsetParent) return;
+          while(el) {
+            top += el.offsetTop;
+            el = el.offsetParent;
+          }
+          window.scrollTo(0, top);
+        },
+        isSettled = () => elItems.every(el => {
+          const rect = el.getBoundingClientRect(),
+            isOffscreen = rect.bottom < 0 || rect.top > window.innerHeight;
+          return el.classList.contains('hide') || isOffscreen || el.querySelector('img').complete;
+        }),
+        reveal = () => elPageWrapper.classList.remove('restore-grid'),
+        // resize callbacks run before paint, so re-anchoring here never shows a jump
+        observer = new ResizeObserver(() => {
+          anchor();
+          if(isSettled()) reveal();
+        }),
+        controller = new AbortController(),
+        timers = [],
+        stop = () => {
+          observer.disconnect();
+          timers.forEach(clearTimeout);
+          controller.abort();
+          reveal();
+          this.stopRestore = null;
+        };
+      if(this.stopRestore) this.stopRestore();
+      this.stopRestore = stop;
+      anchor();
+      elItems.concat(Array.from(elPageWrapper.children)).forEach(el => observer.observe(el));
+      timers.push(setTimeout(reveal, 1000), setTimeout(stop, 2000));
+      ['wheel', 'touchstart', 'keydown', 'pointerdown']
+        .forEach(type => window.addEventListener(type, stop, { passive: true, signal: controller.signal }));
     }
 
     // toggle between desktop and mobile email view
@@ -132,7 +177,7 @@ window.gallery = (() => {
       // set activly visible image
       elImage.classList.add('active');
       // update download link
-      elDetails.querySelector('a[download]').href = elImage.src;
+      elDetails.querySelector('a[download]').href = elImage.dataset.full;
     }
 
     // finds and returns email's model based on id
@@ -224,8 +269,10 @@ window.gallery = (() => {
                 </nav>
               </section>
               ${model.description ? `<div class="description">${model.description}</div>` : ''}
-              <img alt="${model.title} - desktop view" class="desktop-view active" src="${model.images.desktop}" />
-              <img alt="${model.title} - mobile view" class="mobile-view" src="${model.images.mobile}" />
+              <img alt="${model.title} - desktop view" class="desktop-view active"
+                data-full="${model.images.desktop}" src="${model.images.grid}" />
+              <img alt="${model.title} - mobile view" class="mobile-view"
+                data-full="${model.images.mobile}" fetchpriority="low" src="${model.images.mobile}" />
             </figure>
           </main>
         </div>
@@ -235,18 +282,42 @@ window.gallery = (() => {
       });
       elPageWrapper.appendChild(elContainer);
       elContainer.querySelector('img.active').addEventListener('load', this.onActiveImageLoad.bind(this), { once: true });
+      this.loadFullImage(elContainer.querySelector('img.desktop-view'));
       this.model = model;
+    }
+
+    // show the cached grid image until the full-size image loads
+    loadFullImage(elImage) {
+      const fullImage = new Image();
+      // stop a preload from a previous email competing with this one
+      if(this.fullImage) this.fullImage.removeAttribute('src');
+      this.fullImage = fullImage;
+      fullImage.fetchPriority = 'high';
+      fullImage.src = elImage.dataset.full;
+      if(fullImage.complete) {
+        elImage.src = fullImage.src;
+        return;
+      }
+      elImage.classList.add('preview');
+      fullImage.addEventListener('load', () => {
+        fullImage.decode().catch(() => {}).then(() => {
+          elImage.src = fullImage.src;
+          elImage.classList.remove('preview');
+        });
+      }, { once: true });
+      fullImage.addEventListener('error', () => elImage.classList.remove('preview'), { once: true });
     }
 
     show() {
       const id = this.state.value,
         elPageWrapper = this.elPageWrapper,
         elEmailsList = elPageWrapper.querySelector('.emails');
+      if(this.stopRestore) this.stopRestore();
       this.model = null;
       if(id && id !== window.location.pathname) {
         if(!elPageWrapper.classList.contains('hide-grid')) {
           elPageWrapper.classList.add('hide-grid');
-          elEmailsList.addEventListener('transitionend', this.onShowTransitionend.bind(this, id), { once: true });
+          this.afterTransition(elEmailsList, this.onShowTransitionend.bind(this, id));
         } else {
           this.create(this.getEmailDetails(id));
         }
@@ -256,18 +327,27 @@ window.gallery = (() => {
     }
 
     remove() {
-      const elDetails = this.elPageWrapper.querySelector('.email-details'),
-        elPageWrapper = this.elPageWrapper;
+      const elDetails = this.elPageWrapper.querySelector('.email-details');
       if(elDetails) {
         elDetails.classList.remove('loaded');
-        elPageWrapper.classList.remove('hide-grid');
-        elDetails.addEventListener('transitionend', this.onRemoveTransitionend.bind(this), { once: true });
+        this.afterTransition(elDetails, this.onRemoveTransitionend.bind(this));
       }
     }
 
     traverse(direction) {
-      const model = this.model[direction];
+      const model = this.model && this.model[direction];
       if(model) this.state.value = `/${model.slug}`;
+    }
+
+    // run callback on the next transitionend, or after a fallback delay if no transition runs
+    afterTransition(el, callback) {
+      const finish = () => {
+          clearTimeout(timeout);
+          el.removeEventListener('transitionend', finish);
+          callback();
+        },
+        timeout = setTimeout(finish, 600);
+      el.addEventListener('transitionend', finish);
     }
   }
 
@@ -277,7 +357,8 @@ window.gallery = (() => {
       elSearch = document.getElementById('search'),
       elFilterNavigation = document.querySelector('#gallery .filter ul'),
       elFilterButtons = Array.from(document.querySelectorAll('#gallery .filter [data-tag]')),
-      elFilterAll = findFilter('all');
+      elFilterAll = findFilter('all'),
+      elFilterActive = elFilterButtons.find(el => el.classList.contains('active'));
 
     let searchTimeout;
 
@@ -297,7 +378,7 @@ window.gallery = (() => {
       elSearch.value = '';
       if(filter) {
         updateLocation(elTarget);
-        filterList(filter !== 'all' ? data.filter(m => m.tags.includes(filter)) : data);
+        filterList(filterData(filter));
         // add active state to new filter
         elTarget.classList.add('active');
       } else if(elTarget.dataset.action === 'show-search') {
@@ -389,6 +470,10 @@ window.gallery = (() => {
       if(elFilter) elFilter.dispatchEvent(new MouseEvent('click', { bubbles, cancelable: true }));
     }
 
+    function filterData(tag) {
+      return tag && tag !== 'all' ? data.filter(m => m.tags.includes(tag)) : data;
+    }
+
     function findFilter(tag) {
       return elFilterButtons.find(el => el.dataset.tag === tag);
     }
@@ -446,8 +531,10 @@ window.gallery = (() => {
         setTimeout(() => done = true, 600);
       }, false);
     });
+    // size tiles before their lazy images load
+    masonryGrid.resizeAllItems();
     // re-map `previous` and `next` for each email
-    remapPagination(data);
+    remapPagination(filterData(elFilterActive && elFilterActive.dataset.tag));
     syncFilterToPath();
     window.addEventListener('popstate', syncFilterToPath);
     return emailDetails;
