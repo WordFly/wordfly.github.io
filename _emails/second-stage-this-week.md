@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/second-stage-this-week.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/second-stage-this-week.jpg"
 tags:
-  - events
+  - event
 permalink: /emails/second-stage-this-week/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

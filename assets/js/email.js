@@ -39,7 +39,7 @@ window.email = (() => {
   }
 
   function initialize() {
-    new EmailDetails();
+    return new EmailDetails();
   }
 
   return {

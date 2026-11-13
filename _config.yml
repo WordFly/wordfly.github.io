@@ -18,6 +18,12 @@ defaults:
       type: "emails"
     values:
       layout: "email"
+  -
+    scope:
+      path: "category"
+    values:
+      layout: "home"
+      permalink: "/category/:basename/"
 
 collections:
   emails:

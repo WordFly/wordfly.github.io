@@ -1,35 +1,14 @@
 <nav class="filter">
   <ul>
     <li>
-      <button class="active" data-tag="all">All</button>
+      <button class="active" data-tag="all" data-title="{{ site.title | escape }} | {{ site.description | escape }}">All</button>
     </li>
+    {%- assign categories = site.pages | where_exp: "p", "p.tag" | sort: "order" -%}
+    {%- for category in categories %}
     <li>
-      <button data-tag="newsletter">Newsletters</button>
+      <button data-slug="{{ category.name | remove: '.md' }}" data-tag="{{ category.tag }}" data-title="{{ category.title | escape }} | {{ site.title | escape }}">{{ category.title }}</button>
     </li>
-    <li>
-      <button data-tag="event">Events</button>
-    </li>
-    <li>
-      <button data-tag="automation">Automations</button>
-    </li>
-    <li>
-      <button data-tag="shop">Shop</button>
-    </li>
-    <li>
-      <button data-tag="membership">Membership</button>
-    </li>
-    <li>
-      <button data-tag="engagement">Engagement</button>
-    </li>
-    <li>
-      <button data-tag="giving">Giving</button>
-    </li>
-    <li>
-      <button data-tag="education">Education</button>
-    </li>
-    <li>
-      <button data-tag="seasons">Seasons</button>
-    </li>
+    {%- endfor %}
     <li>
       <button data-action="show-search">
         <i class="icon search"></i>

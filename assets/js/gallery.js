@@ -2,6 +2,7 @@
 ---
 
 window.gallery = (() => {
+  const emailPathPattern = /^\/emails\//;
   let instance; // instance stores a reference to the Singleton
 
   // set random background class on body element
@@ -11,16 +12,8 @@ window.gallery = (() => {
   class MasonryGrid {
     constructor() {
       this.elPageWrapper = document.getElementById('gallery');
-      window.addEventListener('load', this.onWindowLoad.bind(this));
-      window.addEventListener('resize', this.onWindowResize.bind(this));
-    }
-
-    onWindowLoad() {
-      this.resizeAllItems();
-    }
-
-    onWindowResize() {
-      this.resizeAllItems();
+      window.addEventListener('load', this.resizeAllItems.bind(this));
+      window.addEventListener('resize', this.resizeAllItems.bind(this));
     }
 
     resizeItem(el) {
@@ -41,22 +34,24 @@ window.gallery = (() => {
     constructor(collection) {
       const updateState = this.updateState.bind(this),
         elPageWrapper = this.elPageWrapper = document.getElementById('gallery'),
-        pathname = window.location.pathname;
+        emailDetails = this;
+      this.returnPath = window.location.pathname;
       this.state = {
         get value() {
-          return window.location.pathname.replace(/^\/emails\//, '');
+          return window.location.pathname.replace(emailPathPattern, '');
         },
         set value(value) {
           if(value) {
             window.history.pushState('', document.title, `/emails${value}`);
           } else {
             // remove state
-            window.history.pushState('', document.title, pathname);
+            window.history.pushState('', document.title, emailDetails.returnPath);
           }
           updateState();
         }
       };
       this.collection = collection;
+      this.emails = collection;
       this.model = null;
       window.addEventListener('popstate', this.onPopstate.bind(this));
       elPageWrapper.addEventListener('touchstart', this.onWrapperTouchstart.bind(this));
@@ -69,7 +64,6 @@ window.gallery = (() => {
 
     updateState() {
       const elDetails = this.elPageWrapper.querySelector('.email-details');
-      // e.preventDefault();
       if(elDetails && elDetails.classList.contains('loaded')) {
         elDetails.classList.remove('loaded');
         elDetails.addEventListener('transitionend', this.show.bind(this), { once: true });
@@ -143,28 +137,24 @@ window.gallery = (() => {
 
     // finds and returns email's model based on id
     getEmailDetails(id) {
-      let hasPrevious = false,
-        hasNext = false;
       const collection = this.collection,
-        emailModel = collection.find((model, index) => {
-          // is there a previous email in the collection
-          hasPrevious = index > 0;
-          // is there a next email in the collection
-          hasNext = index < collection.length - 1;
-          return model.slug === id;
-        });
-      return Object.assign({hasPrevious, hasNext}, emailModel);
+        index = collection.findIndex(model => model.slug === id);
+      // emails outside the active filter (e.g. reached via browser history) get no traversal
+      if(index === -1) {
+        return Object.assign({}, this.emails.find(model => model.slug === id),
+          { hasPrevious: false, hasNext: false, previous: null, next: null });
+      }
+      return Object.assign({ hasPrevious: index > 0, hasNext: index < collection.length - 1 }, collection[index]);
     }
 
     // create email "page"
     create(model) {
       const elPageWrapper = this.elPageWrapper,
-        elContainer = elPageWrapper.querySelector('.email-details') || document.createElement('article'),
-        encodedHref = encodeURIComponent(window.location.href);
+        elContainer = elPageWrapper.querySelector('.email-details') || document.createElement('article');
       let tagMarkup = '';
       elContainer.id = `${model.slug}-details`;
       elContainer.classList.add('email-details');
-      model.tags.forEach(t => tagMarkup += `<li>${t.replace('-', ' ')}</li>\n`);
+      model.tags.forEach(t => tagMarkup += `<li>${t.replace(/-/g, ' ')}</li>\n`);
       // build out container's contents
       elContainer.innerHTML = `
         <div class="inner">
@@ -224,8 +214,7 @@ window.gallery = (() => {
                         <span class="offscreen">Download</span>
                       </a>
                     </li>
-                    ${model.archiveurl ?
-                    `<li>
+                    ${model.archiveurl ? `<li>
                       <a data-hint="View live email" href="${model.archiveurl}" target="_blank">
                         <i class="icon external"></i>
                         <span class="offscreen">Archive URL</span>
@@ -234,6 +223,7 @@ window.gallery = (() => {
                   </ul>
                 </nav>
               </section>
+              ${model.description ? `<div class="description">${model.description}</div>` : ''}
               <img alt="${model.title} - desktop view" class="desktop-view active" src="${model.images.desktop}" />
               <img alt="${model.title} - mobile view" class="mobile-view" src="${model.images.mobile}" />
             </figure>
@@ -285,7 +275,9 @@ window.gallery = (() => {
     const emailDetails = new EmailDetails(data),
       masonryGrid = new MasonryGrid(),
       elSearch = document.getElementById('search'),
-      elFilterNavigation = document.querySelector('#gallery .filter ul');
+      elFilterNavigation = document.querySelector('#gallery .filter ul'),
+      elFilterButtons = Array.from(document.querySelectorAll('#gallery .filter [data-tag]')),
+      elFilterAll = findFilter('all');
 
     let searchTimeout;
 
@@ -304,13 +296,14 @@ window.gallery = (() => {
       // clear out current search value
       elSearch.value = '';
       if(filter) {
+        updateLocation(elTarget);
         filterList(filter !== 'all' ? data.filter(m => m.tags.includes(filter)) : data);
         // add active state to new filter
         elTarget.classList.add('active');
       } else if(elTarget.dataset.action === 'show-search') {
         // add active state for search
         if(elTarget.classList.toggle('searching')) {
-          elSearch.addEventListener('transitionend', e => e.target.focus());
+          elSearch.addEventListener('transitionend', e => e.target.focus(), { once: true });
         } else if(currentValue.length > 0) {
           triggerFilterClick('all');
         }
@@ -321,6 +314,7 @@ window.gallery = (() => {
     function onSearchInput(e) {
       const value = e.target.value.toLowerCase();
       e.preventDefault();
+      updateLocation(elFilterAll);
       if(searchTimeout) clearTimeout(searchTimeout);
       searchTimeout = setTimeout(filterList
         .bind(null, data.filter(m => m.title.toLowerCase().indexOf(value) > -1 || m.credit.toLowerCase().indexOf(value) > -1)), 500);
@@ -329,7 +323,7 @@ window.gallery = (() => {
     function onSearchKeydown(e) {
       if(e.keyCode === 13) {
         e.target.blur();
-        document.querySelector('#gallery .filter ul').classList.remove('open');
+        elFilterNavigation.classList.remove('open');
       }
     }
 
@@ -349,12 +343,13 @@ window.gallery = (() => {
       // remove active state from previous filter
       if(elActive) elActive.classList.remove('active');
       Array.from(elWrapper.querySelectorAll('.emails li')).forEach(el => {
-        let done = false;
         const resizeItem = () => {
             masonryGrid.resizeItem(el);
             if(!done) window.requestAnimationFrame(resizeItem);
           },
-          hasId = ids.includes(el.id);
+          hasId = ids.includes(el.id),
+          elImage = el.querySelector('img');
+        let done = false;
         el.classList.add('fade');
         setTimeout(() => {
           if(hasId) {
@@ -365,7 +360,10 @@ window.gallery = (() => {
         }, 300);
         setTimeout(() => {
           window.requestAnimationFrame(resizeItem);
-          if(hasId) el.classList.remove('hide', 'fade');
+          if(hasId) {
+            el.classList.remove('hide');
+            if(elImage.complete) el.classList.remove('fade');
+          }
           setTimeout(() => done = true, 600);
         }, 600);
       });
@@ -386,11 +384,32 @@ window.gallery = (() => {
       emailDetails.collection = data;
     }
 
-    function triggerFilterClick(filter) {
-      const event = document.createEvent('MouseEvent');
-      // trigger a native 'click' event on el
-      event.initEvent('click', true, true);
-      document.querySelector(`#gallery .filter [data-tag=${filter}]`).dispatchEvent(event);
+    function triggerFilterClick(filter, bubbles = true) {
+      const elFilter = findFilter(filter);
+      if(elFilter) elFilter.dispatchEvent(new MouseEvent('click', { bubbles, cancelable: true }));
+    }
+
+    function findFilter(tag) {
+      return elFilterButtons.find(el => el.dataset.tag === tag);
+    }
+
+    function updateLocation(elFilter) {
+      document.title = elFilter.dataset.title;
+      emailDetails.returnPath = elFilter.dataset.slug ? `/category/${elFilter.dataset.slug}/` : '/';
+      window.history.replaceState('', document.title, emailDetails.returnPath);
+    }
+
+    // match the active filter to the URL, e.g. /category/giving/
+    function syncFilterToPath() {
+      const pathname = window.location.pathname,
+        slug = (pathname.match(/^\/category\/([^/]+)/) || [])[1],
+        elFilter = slug ? elFilterButtons.find(el => el.dataset.slug === slug) : elFilterAll;
+      if(emailPathPattern.test(pathname)) return;
+      emailDetails.returnPath = pathname;
+      if(!(elSearch && elSearch.value) && elFilter && !elFilter.classList.contains('active')) {
+        // no bubbling, so the mobile filter menu stays closed
+        triggerFilterClick(elFilter.dataset.tag, false);
+      }
     }
 
     // hide / show filters
@@ -409,12 +428,12 @@ window.gallery = (() => {
 
     // resize email grid items
     Array.from(document.querySelectorAll('#gallery .emails li')).forEach(el => {
-      let done = false;
       const resizeItem = () => {
           masonryGrid.resizeItem(el);
           if(!done) window.requestAnimationFrame(resizeItem);
         },
         elImage = el.querySelector('img');
+      let done = false;
       el.addEventListener('click', onItemClick);
       if(elImage.complete) {
         el.classList.remove('fade');
@@ -429,6 +448,9 @@ window.gallery = (() => {
     });
     // re-map `previous` and `next` for each email
     remapPagination(data);
+    syncFilterToPath();
+    window.addEventListener('popstate', syncFilterToPath);
+    return emailDetails;
   }
 
   return {

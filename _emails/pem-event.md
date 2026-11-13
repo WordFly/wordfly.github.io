@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/pem-event.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/pem-event.jpg"
 tags:
-  - events
+  - event
 permalink: /emails/pem-event/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.

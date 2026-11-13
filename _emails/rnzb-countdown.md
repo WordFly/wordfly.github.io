@@ -8,7 +8,7 @@ images:
   grid: "https://media.wordfly.com/wordfly/mome/grid/rnzb-countdown.jpg"
   mobile: "https://media.wordfly.com/wordfly/mome/mobile/rnzb-countdown.jpg"
 tags:
-  - events
+  - event
 permalink: /emails/rnzb-countdown/
 ---
 We feature thoughtfully designed email campaigns created by arts and culture organizations from around the world.
